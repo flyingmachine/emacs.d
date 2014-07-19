@@ -53,7 +53,7 @@
     (package-install p)))
 
 
-;; Add a directory to our load path so that when you `require` things
+;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
@@ -61,6 +61,30 @@
 ;; Customization
 ;;;;
 
-;; This customizes the base Emacs installation
-(load "better-defaults.el")
-(load "themes.el")
+;; These customizations make it easier for you to navigate files,
+;; switch buffers, and choose options from the minibuffer.
+(load "navigation.el")
+
+;; These customizations change the way emacs looks and disable/enable
+;; some user interface elements
+(load "ui.el")
+
+;; These customizations are related to the way you search for text
+;; within an emacs buffer
+(load "search.el")
+
+
+
+
+;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
+;; to load them.
+;;
+;; For example, if you download yaml-mode.el to ~/.emacs.d/vendor,
+;; then you can add the following code to this file:
+;;
+;; (require 'yaml-mode)
+;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+;; 
+;; Adding this code will make Emacs enter yaml mode whenever you open
+;; a .yml file
+(add-to-list 'load-path "~/.emacs.d/vendor")
