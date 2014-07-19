@@ -62,5 +62,5 @@
 ;;;;
 
 ;; This customizes the base Emacs installation
-(require 'better-defaults)
-
+(load "better-defaults.el")
+(load "themes.el")
