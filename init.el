@@ -36,7 +36,17 @@
 
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
-    cider))
+    cider
+
+    ;; allow ido usage in as many contexts as possible. see
+    ;; customizations/better-defaults.el line 47 for a description
+    ;; of ido
+    ido-ubiquitous
+
+    ;; Enhances M-x to allow easier execution of commands. Provides
+    ;; a filterable list of possible commands in the minibuffer
+    ;; http://www.emacswiki.org/emacs/Smex
+    smex))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -51,8 +61,6 @@
 ;; Customization
 ;;;;
 
+;; This customizes the base Emacs installation
 (require 'better-defaults)
 
-
-(require 'ido)
-(ido-mode t)
