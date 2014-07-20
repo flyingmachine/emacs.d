@@ -61,8 +61,6 @@
 ;; Customization
 ;;;;
 
-(load "better-defaults.el")
-
 ;; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
 (load "navigation.el")
@@ -71,9 +69,8 @@
 ;; some user interface elements
 (load "ui.el")
 
-;; These customizations are related to the way you search for text
-;; within an emacs buffer
-(load "search.el")
+;; These customizations make editing a bit nicer.
+(load "editing.el")
 
 
 
