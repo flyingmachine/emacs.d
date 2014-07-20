@@ -43,7 +43,7 @@
 ;; recently edited files when you first start emacs
 (require 'recentf)
 (recentf-mode 1)
-(setq recentf-max-menu-items 25)
+(setq recentf-max-menu-items 40)
 (setq recentf-save-file (concat user-emacs-directory ".recentf"))
 
 

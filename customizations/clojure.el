@@ -10,7 +10,7 @@
 (add-hook 'clojure-mode-hook 'subword-mode)
 (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
 
-;; More syntax highlighting for Clojure
+;; A little more syntax highlighting
 (require 'clojure-mode-extra-font-locking)
 
 ;;;;
@@ -33,7 +33,6 @@
 ;; Wrap when navigating history.
 (setq cider-repl-wrap-history t)
 
-
 ;; CUSTOMIZE
 ;; Uncomment the line below to enable paredit in your REPL
 ;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
@@ -42,8 +41,8 @@
 ;; Uncomment the line below to enable rainbow delimiters in REPL
 ;;(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 
+
+;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
-
-
