@@ -67,6 +67,9 @@
     ;; edit html tags like sexps
     tagedit
 
+    ;; git integration
+    magit
+
     yaml-mode
     coffee-mode
     scss-mode
@@ -99,7 +102,8 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-;; Sets up exec-path-from-shell
+;; Sets up exec-path-from-shell so that Emacs will use the correct
+;; environment variables
 (load "shell-integration.el")
 
 ;; These customizations make it easier for you to navigate files,
@@ -119,6 +123,7 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; Langauage-specific
 (load "clojure.el")
 (load "setup-js.el")
 (load "setup-css.el")

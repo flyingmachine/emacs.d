@@ -25,6 +25,14 @@
 (add-to-list 'load-path "~/.emacs.d/themes")
 (load-theme 'tomorrow-night-bright t)
 
+;; powerline customizes the mode line
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
+(require 'powerline)
+(custom-set-faces
+ '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil))))
+ ;'(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))
+ )
+
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
 
