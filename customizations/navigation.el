@@ -12,6 +12,14 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
+;; Turn on recent file mode so that you can more easily switch to
+;; recently edited files when you first start emacs
+(setq recentf-save-file (concat user-emacs-directory ".recentf"))
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 40)
+
+
 ;; ido-mode allows you to more easily navigate choices. For example,
 ;; when you want to switch buffers, ido presents you with a list
 ;; of buffers in the the mini-buffer. As you start to type a buffer's
@@ -37,15 +45,6 @@
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
 (ido-ubiquitous-mode 1)
-
-
-;; Turn on recent file mode so that you can more easily switch to
-;; recently edited files when you first start emacs
-(require 'recentf)
-(recentf-mode 1)
-(setq recentf-max-menu-items 40)
-(setq recentf-save-file (concat user-emacs-directory ".recentf"))
-
 
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)

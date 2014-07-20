@@ -13,6 +13,9 @@
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
 
+;; Highlight current line
+(global-hl-line-mode 1)
+
 ;; Interactive search key bindings. By default, C-s runs
 ;; isearch-forward, so this swaps the bindings.
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
@@ -22,13 +25,6 @@
 
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)
-
-;; Allows auto completion for code with a popup menu
-;; http://www.emacswiki.org/emacs/AutoComplete
-(require 'auto-complete)
-(global-auto-complete-mode)
-
-
 
 ;; When you visit a file, point goes to the last place where it
 ;; was when you previously visited the same file.
