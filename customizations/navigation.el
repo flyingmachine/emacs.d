@@ -26,6 +26,10 @@
 ;; Turn this behavior off because it's annoying
 (setq ido-use-filename-at-point nil)
 
+;; Don't try to match file across all "work" directories; only match files
+;; in the current directory displayed in the minibuffer
+(setq ido-auto-merge-work-directories-length -1)
+
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
 (ido-ubiquitous-mode 1)
