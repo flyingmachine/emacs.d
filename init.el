@@ -56,21 +56,39 @@
     ;; This library works around this problem by copying important
     ;; environment variables from the user's shell.
     ;; https://github.com/purcell/exec-path-from-shell
-    exec-path-from-shell))
+    exec-path-from-shell
+
+    ;; CUSTOMIZE
+    ;; Uncomment the line below for colorful parenthesis matching
+    ;; rainbow-delimiters
+    ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
 
-;; Add a directory to our load path so that when you `load` things
-;; below, Emacs knows where to look for the corresponding file.
-(add-to-list 'load-path "~/.emacs.d/customizations")
+;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
+;; to load them.
+;;
+;; For example, if you download yaml-mode.el to ~/.emacs.d/vendor,
+;; then you can add the following code to this file:
+;;
+;; (require 'yaml-mode)
+;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+;; 
+;; Adding this code will make Emacs enter yaml mode whenever you open
+;; a .yml file
+(add-to-list 'load-path "~/.emacs.d/vendor")
+
 
 ;;;;
 ;; Customization
 ;;;;
 
+;; Add a directory to our load path so that when you `load` things
+;; below, Emacs knows where to look for the corresponding file.
+(add-to-list 'load-path "~/.emacs.d/customizations")
 
 ;; Sets up exec-path-from-shell
 (load "shell-integration.el")
@@ -89,15 +107,8 @@
 ;; Hard-to-categorize customizations
 (load "misc.el")
 
-;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
-;; to load them.
-;;
-;; For example, if you download yaml-mode.el to ~/.emacs.d/vendor,
-;; then you can add the following code to this file:
-;;
-;; (require 'yaml-mode)
-;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
-;; Adding this code will make Emacs enter yaml mode whenever you open
-;; a .yml file
-(add-to-list 'load-path "~/.emacs.d/vendor")
+;; For editing lisps
+(load "elisp-editing.el")
+
+;; Clojure helpfulness
+(load "clojure.el")

@@ -23,6 +23,8 @@
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)
 
+
+
 ;; When you visit a file, point goes to the last place where it
 ;; was when you previously visited the same file.
 ;; http://www.emacswiki.org/emacs/SavePlace

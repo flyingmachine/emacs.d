@@ -30,9 +30,22 @@
 ;; in the current directory displayed in the minibuffer
 (setq ido-auto-merge-work-directories-length -1)
 
+;; Includes buffer names of recently open files, even if they're not
+;; open now
+(setq ido-use-virtual-buffers t)
+
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
 (ido-ubiquitous-mode 1)
+
+
+;; Turn on recent file mode so that you can more easily switch to
+;; recently edited files when you first start emacs
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(setq recentf-save-file (concat user-emacs-directory ".recentf"))
+
 
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
