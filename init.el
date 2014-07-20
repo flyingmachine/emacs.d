@@ -46,7 +46,17 @@
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
-    smex))
+    smex
+
+    ;; On OS X, an Emacs instance started from the graphical user
+    ;; interface will have a different environment than a shell in a
+    ;; terminal window, because OS X does not run a shell during the
+    ;; login. Obviously this will lead to unexpected results when
+    ;; calling external utilities like make from Emacs.
+    ;; This library works around this problem by copying important
+    ;; environment variables from the user's shell.
+    ;; https://github.com/purcell/exec-path-from-shell
+    exec-path-from-shell))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -61,6 +71,10 @@
 ;; Customization
 ;;;;
 
+
+;; Sets up exec-path-from-shell
+(load "shell-integration.el")
+
 ;; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
 (load "navigation.el")
@@ -72,8 +86,8 @@
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
 
-
-
+;; Hard-to-categorize customizations
+(load "misc.el")
 
 ;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
 ;; to load them.
