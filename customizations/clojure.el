@@ -39,3 +39,32 @@
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
+
+
+;; key bindings
+;; these help me out with the way I usually develop web apps
+(defun cider-start-http-server ()
+  (interactive)
+  (cider-load-current-buffer)
+  (let ((ns (cider-current-ns)))
+    (cider-repl-set-ns ns)
+    (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
+    (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
+
+
+(defun cider-reval-env ()
+  (interactive)
+  (let ((current-ns (cider-current-ns)))
+    (cider-interactive-eval
+     "(in-ns 'environ.core)
+      (def env (merge (read-env-file) (read-system-props) (read-system-env)))")
+    (cider-repl-set-ns current-ns)))
+
+(defun cider-refresh ()
+  (interactive)
+  (cider-interactive-eval "(user/go)"))
+
+(eval-after-load 'cider
+  '(progn
+     (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
+     (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)))
