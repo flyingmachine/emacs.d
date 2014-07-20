@@ -61,6 +61,9 @@
     ;; https://github.com/purcell/exec-path-from-shell
     exec-path-from-shell
 
+    ;; project navigation
+    projectile
+
     ;; colorful parenthesis matching
     rainbow-delimiters
 
