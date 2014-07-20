@@ -32,14 +32,8 @@
 ;; Wrap when navigating history.
 (setq cider-repl-wrap-history t)
 
-;; CUSTOMIZE
-;; Uncomment the line below to enable paredit in your REPL
-;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
-
-;; CUSTOMIZE
-;; Uncomment the line below to enable rainbow delimiters in REPL
-;;(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
-
+;; enable paredit in your REPL
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
 
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))

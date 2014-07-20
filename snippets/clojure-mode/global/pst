@@ -1,0 +1,6 @@
+#name: pst
+# --
+(try
+  (/ 1 0)
+  (catch ArithmeticException e
+    (clojure.stacktrace/print-stack-trace e)))

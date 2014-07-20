@@ -1,0 +1,3 @@
+#name:midje
+# --
+(use 'midje.repl)

@@ -61,10 +61,16 @@
     ;; https://github.com/purcell/exec-path-from-shell
     exec-path-from-shell
 
-    ;; CUSTOMIZE
-    ;; Uncomment the line below for colorful parenthesis matching
-    ;; rainbow-delimiters
-    ))
+    ;; colorful parenthesis matching
+    rainbow-delimiters
+
+    ;; edit html tags like sexps
+    tagedit
+
+    yaml-mode
+    coffee-mode
+    scss-mode
+    haskell-mode))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -113,5 +119,7 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Clojure helpfulness
 (load "clojure.el")
+(load "setup-js.el")
+(load "setup-css.el")
+(load "setup-yaml.el")
