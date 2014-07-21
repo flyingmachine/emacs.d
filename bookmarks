@@ -1,0 +1,65 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("gromit"
+ (filename . "~/projects/web_sites/gromit/server/src/gromit/server.clj")
+ (front-context-string . "(ns gromit.serve")
+ (rear-context-string)
+ (position . 1))
+("magepunch"
+ (filename . "~/projects/web_sites/magepunch/engine/src/magepunch/engine/move.clj")
+ (front-context-string . "#!/usr/bin/env b")
+ (rear-context-string)
+ (position . 1))
+("wallace"
+ (filename . "~/projects/web_sites/wallace/server/src/wallace/server.clj")
+ (front-context-string . "\n      wrap-mult")
+ (rear-context-string . "ap-nested-params")
+ (position . 860))
+("rabble"
+ (filename . "~/projects/web_sites/rabble/src/rabble/ring_app.clj")
+ (front-context-string . "(ns rabble.ring-")
+ (rear-context-string)
+ (position . 1))
+("wj"
+ (filename . "~/projects/web_sites/weatherjerk/server/src/weatherjerk/server.clj")
+ (front-context-string . "(ns weatherjerk.")
+ (rear-context-string)
+ (position . 1))
+("projects.org"
+ (filename . "~/Dropbox/org-life/projects.org")
+ (front-context-string . "* Grateful Place")
+ (rear-context-string)
+ (position . 1))
+("brave-clojure-web"
+ (filename . "~/projects/web_sites/brave-clojure-web/content/")
+ (front-context-string . ".DS_Store\n  -rw-")
+ (rear-context-string . "48 Sep  5 16:02 ")
+ (position . 270))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/org-life/projects.org")
+ (front-context-string . "** DONE read and")
+ (rear-context-string . "2013-10-22 Tue>\n")
+ (position . 1496))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/org-life/debug-journal.org")
+ (front-context-string . "**** thoughts on")
+ (rear-context-string . "lplace.server]]\n")
+ (position . 2033))
+("high.org"
+ (filename . "~/Dropbox/org-life/high.org")
+ (front-context-string . "* Grateful Place")
+ (rear-context-string)
+ (position . 1))
+("gp2"
+ (filename . "~/projects/web_sites/gp2/server/src/gratefulplace/server.clj")
+ (front-context-string . "(ns gratefulplac")
+ (rear-context-string)
+ (position . 1))
+("athens"
+ (filename . "~/projects/web_sites/athens/server/src/athens/server.clj")
+ (front-context-string . "(ns athens")
+ (rear-context-string)
+ (position . 1))
+)

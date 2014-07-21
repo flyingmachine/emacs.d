@@ -15,3 +15,4 @@
         ("n" "Note" entry (file "~/Dropbox/org-life/notes.org")
          "* %?")))
 (setq org-startup-indented t)
+(setq org-agenda-files (list "~/Dropbox/org-life/projects.org"))
