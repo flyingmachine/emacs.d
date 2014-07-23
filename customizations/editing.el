@@ -4,11 +4,13 @@
 ;; http://www.emacswiki.org/emacs/HippieExpand
 (global-set-key (kbd "M-/") 'hippie-expand)
 
-;; Don't use filenames when doing autocompletion because
-;; you rarely ever, ever, ever want to do that
+;; Lisp-friendly hippie expand
 (setq hippie-expand-try-functions-list
-      (remove 'try-complete-file-name-partially
-              (remove 'try-complete-file-name hippie-expand-try-functions-list)))
+      '(try-complete-lisp-symbol-partially
+        try-complete-lisp-symbol
+        try-expand-dabbrev
+        try-expand-dabbrev-all-buffers
+        try-expand-dabbrev-from-kill))
 
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
