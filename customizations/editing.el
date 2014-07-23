@@ -6,11 +6,11 @@
 
 ;; Lisp-friendly hippie expand
 (setq hippie-expand-try-functions-list
-      '(try-complete-lisp-symbol-partially
-        try-complete-lisp-symbol
-        try-expand-dabbrev
+      '(try-expand-dabbrev
         try-expand-dabbrev-all-buffers
-        try-expand-dabbrev-from-kill))
+        try-expand-dabbrev-from-kill
+        try-complete-lisp-symbol-partially
+        try-complete-lisp-symbol))
 
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
