@@ -127,7 +127,7 @@
 (load "elisp-editing.el")
 
 ;; Langauage-specific
-(load "clojure.el")
+(load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-css.el")
 (load "setup-yaml.el")
