@@ -76,7 +76,11 @@
     yaml-mode
     coffee-mode
     scss-mode
-    haskell-mode))
+    haskell-mode
+    company
+    ack-and-a-half
+    ag
+    enh-ruby-mode))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
