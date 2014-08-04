@@ -52,6 +52,7 @@
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
 
 ;; key bindings
