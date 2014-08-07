@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (cider-connect cider-jack-in cider-version) "cider"
-;;;;;;  "cider.el" (21451 57645 0 0))
+;;;;;;  "cider.el" (21475 55184 0 0))
 ;;; Generated autoloads from cider.el
 
 (autoload 'cider-version "cider" "\
@@ -29,7 +29,7 @@ Connect to an nREPL server identified by HOST and PORT.
 ;;;***
 
 ;;;### (autoloads (cider-inspect) "cider-inspector" "cider-inspector.el"
-;;;;;;  (21451 57644 0 0))
+;;;;;;  (21475 55183 0 0))
 ;;; Generated autoloads from cider-inspector.el
 
 (autoload 'cider-inspect "cider-inspector" "\
@@ -40,7 +40,7 @@ Eval the string EXPRESSION and inspect the result.
 ;;;***
 
 ;;;### (autoloads (cider-macroexpand-all cider-macroexpand-1) "cider-macroexpansion"
-;;;;;;  "cider-macroexpansion.el" (21451 57645 0 0))
+;;;;;;  "cider-macroexpansion.el" (21475 55184 0 0))
 ;;; Generated autoloads from cider-macroexpansion.el
 
 (autoload 'cider-macroexpand-1 "cider-macroexpansion" "\
@@ -57,9 +57,23 @@ Invoke 'clojure.walk/macroexpand-all' on the expression preceding point.
 
 ;;;***
 
-;;;### (autoloads (cider-mode) "cider-mode" "cider-mode.el" (21451
-;;;;;;  57645 0 0))
+;;;### (autoloads (cider-mode cider-mode-line) "cider-mode" "cider-mode.el"
+;;;;;;  (21475 55184 0 0))
 ;;; Generated autoloads from cider-mode.el
+
+(defvar cider-mode-line '(" cider" (:eval (format "[%s]" (cider-current-ns)))) "\
+Mode line ligher for `cider-mode'.
+
+The value of this variable is a mode line template as in
+`mode-line-format'.  See Info Node `(elisp)Mode Line Format' for
+details about mode line templates.
+
+Customize this variable to change how `cider-mode' displays its
+status in the mode line.  The default value displays the current ns.
+Set this variable to nil to disable the mode line
+entirely.")
+
+(custom-autoload 'cider-mode-line "cider-mode" t)
 
 (autoload 'cider-mode "cider-mode" "\
 Minor mode for REPL interaction from a Clojure buffer.
@@ -71,7 +85,7 @@ Minor mode for REPL interaction from a Clojure buffer.
 ;;;***
 
 ;;;### (autoloads (cider-scratch) "cider-scratch" "cider-scratch.el"
-;;;;;;  (21451 57644 0 0))
+;;;;;;  (21475 55183 0 0))
 ;;; Generated autoloads from cider-scratch.el
 
 (autoload 'cider-scratch "cider-scratch" "\
@@ -82,7 +96,7 @@ Create a scratch buffer.
 ;;;***
 
 ;;;### (autoloads (cider-selector) "cider-selector" "cider-selector.el"
-;;;;;;  (21451 57644 0 0))
+;;;;;;  (21475 55183 0 0))
 ;;; Generated autoloads from cider-selector.el
 
 (autoload 'cider-selector "cider-selector" "\
@@ -99,8 +113,8 @@ See `def-cider-selector-method' for defining new methods.
 
 ;;;### (autoloads nil nil ("cider-client.el" "cider-doc.el" "cider-eldoc.el"
 ;;;;;;  "cider-interaction.el" "cider-pkg.el" "cider-repl.el" "cider-stacktrace.el"
-;;;;;;  "cider-test.el" "cider-util.el" "nrepl-client.el") (21451
-;;;;;;  57645 359916 0))
+;;;;;;  "cider-test.el" "cider-util.el" "nrepl-client.el") (21475
+;;;;;;  55184 367849 0))
 
 ;;;***
 
