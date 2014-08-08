@@ -141,4 +141,5 @@
 (load "setup-css.el")
 (load "setup-yaml.el")
 (load "setup-org.el")
+(load "setup-prolog.el")
 (load "setup-ruby.el")
