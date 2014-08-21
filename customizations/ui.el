@@ -74,3 +74,6 @@
 
 ;; don't pop up font menu
 (global-set-key (kbd "s-t") '(lambda () (interactive)))
+
+;; no bell
+(setq ring-bell-function 'ignore)
