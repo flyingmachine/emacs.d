@@ -18,7 +18,7 @@
  (rear-context-string)
  (position . 1))
 ("wallace"
- (filename . "~/projects/web_sites/wallace/server/src/wallace/server.clj")
+ (filename . "~/projects/web_sites/wallace/server/src/wallace/server/components.clj")
  (front-context-string . "\n      wrap-mult")
  (rear-context-string . "ap-nested-params")
  (position . 860))
