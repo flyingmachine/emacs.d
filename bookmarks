@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("cocktails"
+(("hermes"
+ (filename . "~/projects/web_sites/hermes/server/src/hermes/server/components.clj")
+ (front-context-string . "(ns hermes.serve")
+ (rear-context-string)
+ (position . 1))
+("cocktails"
  (filename . "~/projects/web_sites/cocktails/server/src/cocktails/core.clj")
  (front-context-string . "(ns cocktails.co")
  (rear-context-string)

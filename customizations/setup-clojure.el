@@ -66,17 +66,9 @@
     (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
 
 
-(defun cider-reval-env ()
-  (interactive)
-  (let ((current-ns (cider-current-ns)))
-    (cider-interactive-eval
-     "(in-ns 'environ.core)
-      (def env (merge (read-env-file) (read-system-props) (read-system-env)))")
-    (cider-repl-set-ns current-ns)))
-
 (defun cider-refresh ()
   (interactive)
-  (cider-interactive-eval "(user/go)"))
+  (cider-interactive-eval (format "(user/reset)")))
 
 (defun cider-user-ns ()
   (interactive)
