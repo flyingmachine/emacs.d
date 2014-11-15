@@ -47,11 +47,6 @@
  (front-context-string . ".DS_Store\n  -rw-")
  (rear-context-string . "48 Sep  5 16:02 ")
  (position . 270))
-("high.org"
- (filename . "~/Dropbox/org-life/high.org")
- (front-context-string . "* Grateful Place")
- (rear-context-string)
- (position . 1))
 ("gp2"
  (filename . "~/projects/web_sites/gp2/server/src/gratefulplace/server.clj")
  (front-context-string . "(ns gratefulplac")
