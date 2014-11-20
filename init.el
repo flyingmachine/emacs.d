@@ -76,16 +76,7 @@
     tagedit
 
     ;; git integration
-    magit
-
-    yaml-mode
-    coffee-mode
-    scss-mode
-    haskell-mode
-    company
-    ack-and-a-half
-    ag
-    enh-ruby-mode))
+    magit))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -138,11 +129,7 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
-(load "setup-css.el")
-(load "setup-yaml.el")
-(load "setup-org.el")
-(load "setup-prolog.el")
-(load "setup-ruby.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
