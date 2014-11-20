@@ -11,6 +11,11 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+;;                          ("marmalade" . "http://marmalade-repo.org/packages/")
+;;                          ("melpa" . "http://melpa-stable.milkbox.net/packages/")))
+
+
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
@@ -61,10 +66,17 @@
     ;; https://github.com/purcell/exec-path-from-shell
     exec-path-from-shell
 
-    ;; CUSTOMIZE
-    ;; Uncomment the line below for colorful parenthesis matching
-    ;; rainbow-delimiters
-    ))
+    ;; project navigation
+    projectile
+
+    ;; colorful parenthesis matching
+    rainbow-delimiters
+
+    ;; edit html tags like sexps
+    tagedit
+
+    ;; git integration
+    magit))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -93,7 +105,8 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-;; Sets up exec-path-from-shell
+;; Sets up exec-path-from-shell so that Emacs will use the correct
+;; environment variables
 (load "shell-integration.el")
 
 ;; These customizations make it easier for you to navigate files,
@@ -113,5 +126,20 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Clojure helpfulness
-(load "clojure.el")
+;; Langauage-specific
+(load "setup-clojure.el")
+(load "setup-js.el")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(magit-item-highlight ((t (:background "gray10"))))
+ '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil)))))
