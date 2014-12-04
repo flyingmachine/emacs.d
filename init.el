@@ -156,3 +156,4 @@
  ;; If there is more than one, they won't work right.
  '(magit-item-highlight ((t (:background "gray10"))))
  '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil)))))
+(put 'downcase-region 'disabled nil)
