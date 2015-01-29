@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("hermes"
+(("org-refile-last-stored"
+ (filename . "~/Dropbox/org-life/projects.org")
+ (front-context-string . "** TODO clean ga")
+ (rear-context-string . "ository\n* House\n")
+ (position . 7999))
+("hermes"
  (filename . "~/projects/web_sites/hermes/server/src/hermes/server/components.clj")
  (front-context-string . "(ns hermes.serve")
  (rear-context-string)
