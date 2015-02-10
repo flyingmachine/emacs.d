@@ -12,10 +12,10 @@
              '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
              '("melpa" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
 
-;; (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
-
-
+(add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -157,3 +157,4 @@
  ;; If there is more than one, they won't work right.
  '(magit-item-highlight ((t (:background "gray10"))))
  '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil)))))
+(put 'downcase-region 'disabled nil)

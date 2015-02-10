@@ -65,6 +65,9 @@
     (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
     (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
 
+(defun cider-user-go ()
+  (interactive)
+  (cider-interactive-eval (format "(user/go)")))
 
 (defun cider-refresh ()
   (interactive)
@@ -78,5 +81,6 @@
   '(progn
      (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
+     (define-key clojure-mode-map (kbd "C-M-g") 'cider-user-go)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
