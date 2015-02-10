@@ -9,7 +9,7 @@
 ;;         Hugo Duncan <hugo@hugoduncan.org>
 ;;         Steve Purcell <steve@sanityinc.com>
 ;; URL: http://www.github.com/clojure-emacs/cider
-;; Version: 0.8.1
+;; Version: 0.8.2
 ;; Package-Requires: ((clojure-mode "3.0.0") (cl-lib "0.5") (dash "2.4.1") (pkg-info "0.4") (emacs "24") (queue "0.1.1"))
 ;; Keywords: languages, clojure, cider
 
@@ -34,7 +34,7 @@
 
 ;;; Installation:
 
-;; Available as a package in marmalade-repo.org and melpa.milkbox.net.
+;; Available as a package in marmalade-repo.org and melpa.org
 
 ;; (add-to-list 'package-archives
 ;;              '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -42,7 +42,7 @@
 ;; or
 ;;
 ;; (add-to-list 'package-archives
-;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;              '("melpa" . "http://melpa.org/packages/") t)
 ;;
 ;; M-x package-install cider
 
@@ -53,7 +53,7 @@
 ;;; Code:
 
 (defgroup cider nil
-  "Clojure Integrated Development Environment and REPL."
+  "Clojure Interactive Development Environment Reimagined."
   :prefix "cider-"
   :group 'applications
   :link '(url-link :tag "Github" "https://github.com/clojure-emacs/cider")
@@ -67,7 +67,7 @@
 (require 'cider-util)
 (require 'tramp-sh)
 
-(defvar cider-version "0.8.1"
+(defvar cider-version "0.8.2"
   "Fallback version used when it cannot be extracted automatically.
 Normally it won't be used, unless `pkg-info' fails to extract the
 version from the CIDER package or library.")

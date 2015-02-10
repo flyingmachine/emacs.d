@@ -2,6 +2,10 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/daniel/projects/web/jobsearch/server/" . "jobsearch/")
+ ("/Users/daniel/projects/web/jobsearch/" . "server/")
+ ("/Users/daniel/.emacs.d/" . "customizations/")
+ ("/Users/daniel/" . ".emacs.d/")
  ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/admin/" . ".git/")
  ("/Users/danielhigginbotham/projects/web_sites/wallace/server/" . "config/")
  ("/Users/danielhigginbotham/projects/web_sites/wallace/config/" . "deploy/")
@@ -58,6 +62,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/daniel/projects/web/jobsearch/server/jobsearch/"
+ "/Users/daniel/.emacs.d/customizations/"
  "/Users/danielhigginbotham/projects/web_sites/hermes/server/migrations/"
  "/Users/danielhigginbotham/projects/web_sites/hermes/server/src/hermes/db/"
  "/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/admin/.git/"
@@ -106,12 +112,12 @@
  "/Users/danielhigginbotham/projects/web_sites/hermes/server/resources/fixtures/"
  "/Users/danielhigginbotham/projects/web_sites/brave-clojure-web/code/read-and-eval/"
  "/Users/danielhigginbotham/projects/web_sites/hermes/"
- "/Users/danielhigginbotham/projects/web_sites/hermes-admin/app/models/"
- "/Users/danielhigginbotham/.ssh/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "app.clj"
+ "ui.el"
  "everything.up.sql"
  "fixtures.clj"
  "config"
@@ -120,12 +126,24 @@
  "route.sql"
  "endpoint.sql"
  "user.sql"
- "queries_test.clj"
- "tasks.clj"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/daniel/projects/web/jobsearch/server/jobsearch/" (21721 27715 0 0) "app.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/server/" (21721 27698 0 0) "jobsearch/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/" (21721 27584 0 0) "ui/" "target/" "server/" "html/" "build.boot" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/" (21721 24899 0 0) "app.cljs" "../" "./")
+
+ ("/Users/daniel/.emacs.d/customizations/" (21614 26040 0 0) "ui.el" "themes.el" "shell-integration.el" "setup-yaml.el" "setup-ruby.el" "setup-prolog.el" "setup-org.el" "setup-js.el" "setup-haskell.el" "setup-css.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/daniel/.emacs.d/" (21721 27245 0 0) "vendor/" "themes/" "snippets/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "bookmarks" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/daniel/" (21721 27245 0 0) "VirtualBox VMs/" "undelete/" "tmux-client-11410.log" "tmp/" "src/" "recov/" "Public/" "projects/" "Pictures/" "pgadmin.log" "Music/" "Movies/" "mongodb/" "log" "Library/" "lib/" "java/" "jars/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "data/" "bin/" "Applications/" ".zshrc.pre-oh-my-zsh" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zsh" ".zlogin" ".zcompdump-Daniel’s MacBook Air-4.3.11" ".zcompdump" ".vimrc" ".viminfo" ".vagrant.d/" ".Trash/" ".tmuxinator/" ".tmux.conf" ".subversion/" ".ssh/" ".sqlite_history" ".sqldeveloper/" ".sh_history" ".saves/" ".rvm/" ".ruby-version" ".rsyncignore" ".recentf" ".rdebug_hist" ".profiles.boot" ".pgpass" ".pgadmin_histoqueries" ".old-dotfiles/" ".oh-my-zsh/" ".nrepl-history.eld" ".nrepl-history" ".npm/" ".node-gyp/" ".netrc" ".m2/" ".localrc" ".local/" ".lesshst" ".lein-env" ".lein/" ".jline-reply.history" ".irbrc" ".irb_history" ".irb-history" ".ido.last~" ".ido.last" ".hughlogin" ".heroku/" ".guard_history" ".gnupg/" ".gitignore" ".gitconfig" ".git-completion.bash" ".ghci" ".ghc/" ".gemrc" ".gem/" ".Extensis/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dotfiles/" ".cups/" ".config/" ".cocoapods/" ".cheat/" ".CFUserTextEncoding" ".cache/" ".bower/" ".boot/" ".bashrc" ".bash_profile" ".bash_login" ".bash_history" ".appletviewer" ".ApacheDirectoryStudio/" ".adobe/" ".ackrc" "../" "./")
+
  ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/admin/.git/" (21606 22048 0 0) "refs/" "packed-refs" "ORIG_HEAD" "objects/" "logs/" "info/" "index" "hooks/" "HEAD" "FETCH_HEAD" "description" "config" "branches/" "../" "./")
 
  ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/admin/" (21606 22037 0 0) "views/" "vendor/" "styles/" "scripts/" "README.md" "project.yml" "package.json" "node_modules/" "index.html" "images/" "Gruntfile.js" "fonts/" "fixtures/" "bower.json" ".git/" "../" "./")
@@ -312,20 +330,6 @@
  ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/chemical/controllers/" (21595 42089 0 0) "map.js" "barchart.js" "../" "./")
 
  ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/chemical2/controllers/" (21595 42089 0 0) "map.js" "barchart.js" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/chemical/" (21595 42089 0 0) "Vitesse.otf" "Vitesse-Light.otf" "templates/" "services/" "project.yml" "map.html" "main.css" "Interstate-Light.ttf" "Interstate-Bold.ttf" "images/" "fixtures/" "controllers/" "barchart.html" ".git/" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gp2/infrastructure/ansible/group_vars/" (21180 60477 0 0) "database" "app" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gp2/infrastructure/ansible/" (21180 57900 0 0) "vendor/" "provision.yml" "prod" "group_vars/" "files/" "dev" "deploy.yml" "demo" ".lein-env" ".DS_Store" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gp2/infrastructure/" (21049 40669 0 0) "Vagrantfile" "ansible/" ".vagrant/" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gp2/" (21177 41040 0 0) "target/" "server/" "README.md" "infrastructure/" "html-app/" "deploy.sh" "build.sh" "assets/" ".lein-env" ".gitignore" ".gitattributes" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gromit/repo/projects/chemical2/" (21586 17344 0 0) "Vitesse.otf" "Vitesse-Light.otf" "templates/" "services/" "project.yml" "map.html" "main.css" "Interstate-Light.ttf" "Interstate-Bold.ttf" "images/" "fixtures/" "controllers/" "barchart.html" ".git/" "../" "./")
-
- ("/Users/danielhigginbotham/projects/web_sites/gromit/" (21514 1329 0 0) "TAGS" "server/" "repo/" "README.md" "log/" "html-app/" "Gemfile.lock" "Gemfile" "Capfile" ".lein-env" ".gitignore" ".git/" ".DS_Store" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

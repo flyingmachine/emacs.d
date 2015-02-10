@@ -42,7 +42,7 @@
 (if (or (equal system-name "DH.local")
         (equal system-name "waffles")) 
     (setq initial-frame-alist '((top . 0) (left . 0)
-                                (width . 177) (height . 47)))
+                                (width . 177) (height . 53)))
   (setq initial-frame-alist '((top . 0) (left . 0)
                               (width . 177) (height . 53))))
 

@@ -392,13 +392,13 @@ Return the position of the prompt beginning."
         (cider-propertize-region
             '(font-lock-face cider-repl-prompt-face read-only t intangible t
                              cider-repl-prompt t
-                             rear-nonsticky (cider-repl-prompt read-only face intangible))
+                             rear-nonsticky (cider-repl-prompt read-only font-lock-face intangible))
           (insert-before-markers prompt))
         (set-marker cider-repl-prompt-start-mark prompt-start)
         prompt-start))))
 
 (defun cider-repl-emit-output-at-pos (buffer string output-face position &optional bol)
-  "Using BUFFER, insert STRING at POSITION and mark it as output.
+  "Using BUFFER, insert STRING (applying to it OUTPUT-FACE) at POSITION.
 If BOL is non-nil insert at the beginning of line."
   (with-current-buffer buffer
     (save-excursion
@@ -408,7 +408,7 @@ If BOL is non-nil insert at the beginning of line."
           ;; TODO: Review the need for bol
           (when (and bol (not (bolp))) (insert-before-markers "\n"))
           (cider-propertize-region `(font-lock-face ,output-face
-                                                    rear-nonsticky (face))
+                                                    rear-nonsticky (font-lock-face))
             (insert-before-markers string)
             (when (and (= (point) cider-repl-prompt-start-mark)
                        (not (bolp)))
@@ -417,7 +417,7 @@ If BOL is non-nil insert at the beginning of line."
     (cider-repl--show-maximum-output)))
 
 (defun cider-repl--emit-interactive-output (string face)
-  "Emit STRING as interactive output using face."
+  "Emit STRING as interactive output using FACE."
   (with-current-buffer (cider-current-repl-buffer)
     (let ((pos (1- (cider-repl--input-line-beginning-position)))
           (string (replace-regexp-in-string "\n\\'" "" string)))
@@ -471,7 +471,7 @@ If BOL is non-nil insert at the beginning of the line."
           (if cider-repl-use-clojure-font-lock
               (insert-before-markers (cider-font-lock-as-clojure string))
             (cider-propertize-region
-                '(font-lock-face cider-repl-result-face rear-nonsticky (face))
+                '(font-lock-face cider-repl-result-face rear-nonsticky (font-lock-face))
               (insert-before-markers string))))))
     (cider-repl--show-maximum-output)))
 
@@ -1025,7 +1025,8 @@ constructs."
         ["Macroexpand" cider-macroexpand-1]
         ["Macroexpand all" cider-macroexpand-all]
         ["Refresh loaded code" cider-refresh]
-        ["Toggle tracing" cider-toggle-trace]
+        ["Toggle var tracing" cider-toggle-trace-var]
+        ["Toggle ns tracing" cider-toggle-trace-ns]
         "--"
         ["Set REPL ns" cider-repl-set-ns]
         ["Toggle pretty printing" cider-repl-toggle-pretty-printing]
@@ -1035,7 +1036,7 @@ constructs."
         ["Clear output" cider-repl-clear-output]
         ["Clear buffer" cider-repl-clear-buffer]
         ["Kill input" cider-repl-kill-input]
-        ["Interrupt" cider-interrupt]
+        ["Interrupt evaluation" cider-interrupt]
         "--"
         ["Quit" cider-quit]
         ["Restart" cider-restart]
@@ -1047,6 +1048,7 @@ constructs."
   "Major mode for Clojure REPL interactions.
 
 \\{cider-repl-mode-map}"
+  (lisp-mode-variables nil)
   (setq-local lisp-indent-function 'clojure-indent-function)
   (setq-local indent-line-function 'lisp-indent-line)
   (make-local-variable 'completion-at-point-functions)
