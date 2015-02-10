@@ -9,3 +9,5 @@ ido.last
 auto-save-list
 backups
 archive-contents
+.cask
+cider
