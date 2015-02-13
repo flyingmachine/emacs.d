@@ -187,6 +187,7 @@ names to which it refers are bound."
      ;; Emacs interface
      (cursor ((,class (:background ,red))))
      (fringe ((,class (:background ,current-line))))
+     (vertical-border ((,class (:foreground ,selection))))
      ;;(linum ((,class (:background ,current-line))))
      (linum ((,class (:foreground ,current-line))))
      (hl-line ((,class (:background ,current-line))))
@@ -196,7 +197,7 @@ names to which it refers are bound."
      (link ((,class (:foreground ,blue))))
      (link-visited ((,class (:foreground ,purple))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
-     (mode-line ((,class (:background ,selection :foreground ,foreground :box (:line-width 10 :color ,selection)))))
+     (mode-line ((,class (:background ,selection :foreground ,foreground :box (:line-width 8 :color ,selection)))))
      (mode-line-inactive ((,class (:background ,current-line :foreground ,foreground))))
      (mode-line-buffer-id ((,class (:foreground ,purple :background nil))))
      (mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
