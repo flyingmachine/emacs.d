@@ -16,6 +16,32 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+(fringe-mode '(4 . 0))
+(global-git-gutter-mode +1)
+
+;; Configure the mode line
+(setq-default mode-line-format
+              '((:eval (propertize " %b" 'face 'mode-line-highlight))
+                " %l:%c  %m"))
+
+;; typography
+(setq-default line-spacing nil)
+(setq mac-allow-anti-aliasing t)
+(global-prettify-symbols-mode t)
+
+;; Increase size for my poor eyes
+(set-face-attribute 'default nil :height 140)
+
+;; Better scrolling
+(setq redisplay-dont-pause t
+      scroll-margin 1
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
+
+(setq mouse-wheel-follow-mouse 't)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+
 ;; Color Themes
 ;; Read http://batsov.com/articles/2012/02/19/color-theming-in-emacs-reloaded/
 ;; for a great explanation of emacs color themes.
@@ -23,18 +49,16 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
+;; (load-theme 'spacegray t)
 (load-theme 'tomorrow-night-bright t)
 
 ;; powerline customizes the mode line
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
-(require 'powerline)
-(custom-set-faces
- '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil))))
- ;'(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))
- )
-
-;; increase font size for better readability
-(set-face-attribute 'default nil :height 140)
+;; (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
+;; (require 'powerline)
+;;(custom-set-faces
+;; '(mode-line ((t (:foreground "#333" :background "#bad063" :box nil))))
+;; ;'(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))
+;; )
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
