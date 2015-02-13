@@ -196,7 +196,7 @@ names to which it refers are bound."
      (link ((,class (:foreground ,blue))))
      (link-visited ((,class (:foreground ,purple))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
-     (mode-line ((,class (:background ,selection :foreground ,foreground))))
+     (mode-line ((,class (:background ,selection :foreground ,foreground :box (:line-width 10 :color ,selection)))))
      (mode-line-inactive ((,class (:background ,current-line :foreground ,foreground))))
      (mode-line-buffer-id ((,class (:foreground ,purple :background nil))))
      (mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
