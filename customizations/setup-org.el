@@ -16,3 +16,5 @@
          "* %?")))
 (setq org-startup-indented t)
 (setq org-agenda-files (list "~/Dropbox/org-life/projects.org"))
+(setq org-completion-use-ido t)
+(setq org-refile-use-outline-path nil)
