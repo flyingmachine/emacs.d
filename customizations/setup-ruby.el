@@ -53,3 +53,8 @@ of FILE in the current directory, suitable for creation"
             (local-set-key (kbd "C-c k") 'rspec-compile-file)))
 
 (setq enh-ruby-bounce-deep-indent t)
+
+
+(defun ruby-align-maps (beg end)
+  (interactive "r")
+  (align-regexp beg end ",\\(\\s-+\\)" 1 1 t))

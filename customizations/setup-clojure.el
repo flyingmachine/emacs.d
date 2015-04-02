@@ -89,3 +89,7 @@
      (define-key clojure-mode-map (kbd "C-M-g") 'cider-user-go)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+(defun clj-align-vectors (beg end)
+  (interactive "r")
+  (align-regexp beg end "^ \\[[^ ]+\\(\\s-+\\)" 1 1 t))
