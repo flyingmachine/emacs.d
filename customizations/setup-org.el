@@ -16,6 +16,7 @@
          "* %?")))
 (setq org-startup-indented t)
 (setq org-agenda-files (list "~/Dropbox/org-life/projects.org"))
+;; Configure refile to use ido and allow nested targets
 (setq org-completion-use-ido t)
 (setq org-outline-path-complete-in-steps nil)
 (setq org-refile-use-outline-path t)
