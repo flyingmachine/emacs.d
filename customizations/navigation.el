@@ -59,3 +59,5 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+(global-set-key (kbd "M-n") 'imenu)

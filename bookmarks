@@ -13,10 +13,10 @@
  (rear-context-string . "2015-02-25 Wed>\n")
  (position . 2507))
 ("org-refile-last-stored"
- (filename . "~/Dropbox/org-life/org-mode/org-play.org")
- (front-context-string . "** w children\n* ")
- (rear-context-string . "\n**** test test\n")
- (position . 79))
+ (filename . "~/Dropbox/org-life/projects.org")
+ (front-context-string . "** TODO brave cl")
+ (rear-context-string . "show it at work\n")
+ (position . 3730))
 ("hermes"
  (filename . "~/projects/web_sites/hermes/server/src/hermes/server/components.clj")
  (front-context-string . "(ns hermes.serve")
