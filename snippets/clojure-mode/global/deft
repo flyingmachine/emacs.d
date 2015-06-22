@@ -1,5 +1,8 @@
-#name: deftype
+# name: deftype
+# key: deft
 # --
-(deftype ${1:Name} [${2:fields}]
-  ${3:Protocol}
-  $0)
+(deftype
+  ^{"$1"}$>
+  $2$>
+  [$3]$>
+  $0)$>

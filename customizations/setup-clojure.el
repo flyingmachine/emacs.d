@@ -15,6 +15,9 @@
 (require 'clojure-mode-extra-font-locking)
 
 ;; syntax hilighting for midje
+(setq clojure-om-dom-syms '(div ul h2 transact! table tr li tbody label))
+(setq clojure-midje-syms  '(fact facts))
+
 (add-hook 'clojure-mode-hook
           (lambda ()
             (setq inferior-lisp-program "lein repl")
@@ -24,9 +27,11 @@
                 (1 font-lock-keyword-face))
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
-            (define-clojure-indent (fact 1))
-            (define-clojure-indent (facts 1))))
+            (dolist (sym (append clojure-midje-syms clojure-om-dom-syms))
+              (put-clojure-indent sym 1))))
 
+;; (dolist (sym '(fact facts div ul li h2 transact! table tr td))
+;;   (put-clojure-indent sym 1))
 ;;;;
 ;; Cider
 ;;;;

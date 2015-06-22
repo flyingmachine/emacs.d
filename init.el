@@ -136,6 +136,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; Asciidoc
+(load "doc-mode.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")

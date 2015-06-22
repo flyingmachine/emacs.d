@@ -1,5 +1,7 @@
-#name: defmethod
+# name: defmacro
+# key: defm
 # --
-(defmethod ${1:name} ${2:match}
-  [${3:args}]
-  $0)
+(defmacro $1
+  "$2"$>
+  [$3]$>
+  $0)$>

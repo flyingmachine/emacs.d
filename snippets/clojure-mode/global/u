@@ -1,0 +1,3 @@
+#name: user namespace
+# --
+(in-ns 'user)

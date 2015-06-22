@@ -58,7 +58,7 @@
  (rear-context-string)
  (position . 1))
 ("brave-clojure-web"
- (filename . "~/projects/web_sites/brave-clojure-web/content/")
+ (filename . "~/projects/web/brave-clojure-web/")
  (front-context-string . ".DS_Store\n  -rw-")
  (rear-context-string . "48 Sep  5 16:02 ")
  (position . 270))

@@ -1,0 +1,6 @@
+#name : <li> ... </li>
+#group : list
+# --
+<li>
+  $0
+</li>
