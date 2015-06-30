@@ -1,0 +1,4 @@
+#name : <h2> ... </h2>
+#group : headings
+# --
+<h2>$0</h2>
