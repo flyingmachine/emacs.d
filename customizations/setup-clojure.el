@@ -24,8 +24,11 @@
                 (1 font-lock-keyword-face))
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
-            (define-clojure-indent (fact 1))
-            (define-clojure-indent (facts 1))))
+            (dolist (sym '(fact facts div ul h2 transact! table))
+              (put-clojure-indent sym 1))))
+
+;; (dolist (sym '(fact facts div ul li h2 transact! table tr td))
+;;   (put-clojure-indent sym 1))
 
 ;;;;
 ;; Cider

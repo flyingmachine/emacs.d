@@ -1,0 +1,4 @@
+#name: clojure tools namespace
+# --
+(require '[clojure.tools.namespace.repl :refer [refresh]])
+(refresh)

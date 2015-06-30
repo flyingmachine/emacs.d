@@ -1,3 +1,4 @@
-#name: use
+# name: use
+# key: use
 # --
-(:use [${1:namespace} :only [$0]])
+(:use [$1 :refer [$2]])$>
