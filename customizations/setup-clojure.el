@@ -15,7 +15,8 @@
 (require 'clojure-mode-extra-font-locking)
 
 ;; syntax hilighting for midje
-(setq clojure-om-dom-syms '(div ul h2 transact! table tr li tbody label root))
+(setq clojure-om-dom-syms '(div ul h2 transact! table tr td li tbody label root form
+                                select option))
 (setq clojure-midje-syms  '(fact facts))
 
 (add-hook 'clojure-mode-hook
@@ -30,8 +31,10 @@
             (dolist (sym (append clojure-midje-syms clojure-om-dom-syms))
               (put-clojure-indent sym 'defun))))
 
-;; (dolist (sym '(fact facts div ul li h2 transact! table tr td))
-;;   (put-clojure-indent sym 1))
+
+(dolist (sym (append clojure-midje-syms clojure-om-dom-syms))
+  (put-clojure-indent sym 'defun))
+
 ;;;;
 ;; Cider
 ;;;;
