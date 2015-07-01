@@ -14,7 +14,7 @@
 ;; A little more syntax highlighting
 (require 'clojure-mode-extra-font-locking)
 
-;; syntax hilighting for midje
+;; syntax hilighting and indentation
 (setq clojure-om-dom-syms '(div ul h2 transact! table tr td li tbody label root form
                                 select option))
 (setq clojure-midje-syms  '(fact facts))
