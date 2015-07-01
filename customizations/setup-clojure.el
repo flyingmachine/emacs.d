@@ -31,10 +31,6 @@
             (dolist (sym (append clojure-midje-syms clojure-om-dom-syms))
               (put-clojure-indent sym 'defun))))
 
-
-(dolist (sym (append clojure-midje-syms clojure-om-dom-syms))
-  (put-clojure-indent sym 'defun))
-
 ;;;;
 ;; Cider
 ;;;;
