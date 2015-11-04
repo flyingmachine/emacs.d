@@ -8,10 +8,10 @@
  (rear-context-string . "pdev forum\n*** \n")
  (position . 11583))
 ("org-capture-last-stored"
- (filename . "~/Dropbox/org-life/projects.org")
- (front-context-string . "* Work\n:PROPERTI")
- (rear-context-string . "2015-02-25 Wed>\n")
- (position . 2507))
+ (filename . "~/Dropbox/org-life/debug-journal.org")
+ (front-context-string . "**** Hypothesis ")
+ (rear-context-string . "07-15 Wednesday\n")
+ (position . 50))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/org-life/projects.org")
  (front-context-string . "** TODO brave cl")
