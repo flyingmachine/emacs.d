@@ -3,6 +3,7 @@
 ;;;;
 
 (require 'cider)
+(require 'clj-refactor)
 
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
@@ -13,6 +14,7 @@
 
 ;; A little more syntax highlighting
 (require 'clojure-mode-extra-font-locking)
+
 
 ;; syntax hilighting and indentation
 (setq clojure-defun-style-default-indent nil)
@@ -43,7 +45,7 @@
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-;; aautocomplete
+;; autocomplete
 (add-hook 'cider-repl-mode-hook #'company-mode)
 (add-hook 'cider-mode-hook #'company-mode)
 
@@ -62,6 +64,21 @@
 
 ;; enable paredit in your REPL
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
+
+;;;;
+;; clj-refactor
+;;;;
+
+(defun clj-refactor-hook ()
+    (clj-refactor-mode 1)
+    (yas-minor-mode 1) ; for adding require/use/import
+    (cljr-add-keybindings-with-prefix "C-c C-m"))
+
+(add-hook 'clojure-mode-hook #'clj-refactor-hook)
+
+;;;;
+;; custom
+;;;;
 
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))

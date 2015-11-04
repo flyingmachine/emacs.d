@@ -21,3 +21,4 @@
 (setq org-outline-path-complete-in-steps nil)
 (setq org-refile-use-outline-path t)
 (setq org-refile-targets '((nil . (:maxlevel . 5))))
+(setq org-capture-bookmark nil)
