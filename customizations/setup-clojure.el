@@ -5,6 +5,9 @@
 (require 'cider)
 (require 'clj-refactor)
 
+;; turn off ansi in boot
+(setenv "BOOT_COLOR" "off")
+
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 

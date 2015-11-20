@@ -4,4 +4,4 @@
   (exec-path-from-shell-initialize))
 
 (exec-path-from-shell-copy-envs
- '("PATH"))
+ '("PATH" "BOOT_CLOJURE_VERSION"))
