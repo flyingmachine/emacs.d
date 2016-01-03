@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("geir"
+(("brave-clojure-quests"
+ (filename . "~/projects/web/brave-clojure/brave-clojure-web/content/quests/")
+ (front-context-string . "example.asc\n  -r")
+ (rear-context-string . "39 Dec 17 14:36 ")
+ (position . 281))
+("geir"
  (filename . "~/projects/web/adzerk/geir/build.boot")
  (front-context-string . "(merge-env!  \n  ")
  (rear-context-string)

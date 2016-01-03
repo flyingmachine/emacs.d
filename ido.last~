@@ -1,0 +1,365 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/daniel/projects/play/quil-pix/src/" . "quil_pix/")
+ ("/Users/daniel/projects/play/quil-pix/" . "src/")
+ ("/Users/daniel/projects/play/" . "quil-pix/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/" . "ui/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/" . "campaigns/")
+ ("/Users/daniel/.m2/repository/hoplon/castra/" . "3.0.0-alpha1/")
+ ("/Users/daniel/.m2/repository/hoplon/" . "castra/")
+ ("/Users/daniel/.m2/repository/com/datomic/datomic-free/" . "0.9.5206/")
+ ("/Users/daniel/.m2/repository/com/datomic/" . "datomic-free/")
+ ("/Users/daniel/.m2/repository/com/" . "datomic/")
+ ("/Users/daniel/.m2/repository/jeluard/boot-notify/" . "0.2.0/")
+ ("/Users/daniel/.m2/repository/jeluard/" . "boot-notify/")
+ ("/Users/daniel/.m2/repository/" . "hoplon/")
+ ("/Users/daniel/.m2/" . "repository/")
+ ("/Users/daniel/projects/web/castra/src/" . "castra/")
+ ("/Users/daniel/projects/web/gp2/infrastructure/ansible/" . "files/")
+ ("/Users/daniel/projects/web/gp2/infrastructure/" . "ansible/")
+ ("/Users/daniel/projects/web/castra/" . "src/")
+ ("/Users/daniel/projects/web/blog/content/assets/" . "stylesheets/")
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/assets/" . "stylesheets/")
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/" . "quests/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/assets/" . "stylesheets/")
+ ("/Users/daniel/projects/web/jobsearch/infrastructure/" . "ansible/")
+ ("/Users/" . "daniel/")
+ ("/Users/daniel/projects/web/gp2/" . "infrastructure/")
+ ("/Users/daniel/projects/web/penny-black/penny-black-core/src/com/flyingmachine/penny_black/" . "core/")
+ ("/Users/daniel/projects/web/penny-black/penny-black-core/src/com/flyingmachine/" . "penny_black/")
+ ("/Users/daniel/projects/web/penny-black/penny-black-core/src/com/" . "flyingmachine/")
+ ("/Users/daniel/projects/web/penny-black/penny-black-core/src/" . "com/")
+ ("/Users/daniel/projects/web/penny-black/penny-black-core/" . "src/")
+ ("/Users/daniel/projects/web/penny-black/" . "penny-black-core/")
+ ("/Users/daniel/projects/web/rabble/src/rabble/db/" . "transactions/")
+ ("/Users/daniel/projects/web/rabble/resources/" . "schemas/")
+ ("/Users/daniel/projects/web/jobsearch/resources/" . "sass/")
+ ("/Users/daniel/projects/web/jobsearch/infrastructure/ansible/" . "files/")
+ ("/Users/daniel/projects/web/brave-clojure/pegthing/src/" . "pegthing/")
+ ("/Users/daniel/projects/web/brave-clojure/pegthing/" . "src/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/the_divine_cheese_code/" . "visualization/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/" . "the_divine_cheese_code/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/" . "src/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/" . "the-divine-cheese-code/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/" . "06/")
+ ("/Users/daniel/projects/web/statsd-client/test/" . "adzerk/")
+ ("/Users/daniel/.emacs.d/elpa/" . "adoc-mode-20151119.914/")
+ ("/" . "Applications/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/backend/adzerk/" . "api/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/backend/" . "geir_backend/")
+ ("/Users/daniel/projects/web/statsd-client/src/" . "adzerk/")
+ ("/Users/daniel/projects/web/statsd-client/" . "src/")
+ ("/Users/daniel/Dropbox/" . "org-life/")
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/resources/" . "admin/")
+ ("/Users/daniel/projects/web/rabble/src/rabble/resources/" . "credential_recovery/")
+ ("/Users/daniel/projects/web/rabble/src/rabble/" . "db/")
+ ("/Users/daniel/projects/web/rabble/src/" . "rabble/")
+ ("/Users/daniel/projects/web/rabble/" . "src/")
+ ("/Users/daniel/Dropbox/org-life/" . "clojure/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/ui/" . "form/")
+ ("/Users/daniel/.dotfiles/" . "gnupg/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/" . "app/")
+ ("/Users/daniel/projects/web/adzerk/geir/src/" . "backend/")
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/" . "jobsearch/")
+ ("/Users/daniel/projects/web/jobsearch/" . "doc/")
+ ("/Users/daniel/projects/web/adzerk/geir/ui/sass/" . "base/")
+ ("/Users/daniel/projects/web/adzerk/geir/ui/" . "sass/")
+ ("/Users/daniel/projects/web/adzerk/geir/" . "src/")
+ ("/Users/daniel/.emacs.d/" . "elpa/")
+ ("/Users/daniel/projects/web/adzerk/" . "geir/")
+ ("/Users/daniel/projects/web/jobsearch/src/backend/" . "jobsearch/")
+ ("/Users/daniel/projects/web/jobsearch/src/" . "frontend/")
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/" . "resources/")
+ ("/Users/daniel/projects/web/afterthepinkslip/db/" . "migrate/")
+ ("/Users/daniel/projects/web/afterthepinkslip/" . "db/")
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/" . "opportunities/")
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/" . "handlers/")
+ ("/Users/daniel/projects/web/blog/content/" . "assets/")
+ ("/Users/daniel/projects/web/blog/" . "content/")
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/" . "lib/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/" . "cftbat/")
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/" . "content/")
+ ("/Users/daniel/projects/web/brave-clojure/" . "brave-clojure-web/")
+ ("/Users/daniel/projects/web/pegthing/src/" . "pegthing/")
+ ("/Users/daniel/projects/web/pegthing/" . "src/")
+ ("/Users/daniel/projects/web/" . "jso/")
+ ("/Users/daniel/projects/" . "play/")
+ ("/Users/daniel/" . "projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/reducers/src/"
+ "/Users/daniel/projects/play/quil-pix/src/quil_pix/"
+ "/Users/daniel/projects/play/quil-pix/"
+ "/Users/daniel/projects/web/jso/"
+ "/Users/daniel/projects/web/jobsearch/"
+ "/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/reducers/"
+ "/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/code/"
+ "/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/"
+ "/Users/daniel/Dropbox/org-life/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/campaigns/flights/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/campaigns/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/ui/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/"
+ "/Users/daniel/projects/web/castra/src/castra/"
+ "/Users/daniel/projects/web/adzerk/geir/src/backend/geir_backend/"
+ "/Users/daniel/.m2/repository/hoplon/castra/3.0.0-alpha1/"
+ "/Users/daniel/projects/web/adzerk/geir/"
+ "/Users/daniel/projects/web/brave-clojure/brave-clojure-web/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat/"
+ "/Users/daniel/.emacs.d/elpa/adoc-mode-20151119.914/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat/content/quests/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat/content/assets/stylesheets/"
+ "/Users/daniel/.m2/repository/com/datomic/datomic-free/0.9.5206/"
+ "/Users/daniel/tmp/boot-test/src/test/"
+ "/Users/daniel/tmp/boot-test/"
+ "/Users/daniel/.boot/"
+ "/Users/daniel/.m2/repository/jeluard/boot-notify/0.2.0/"
+ "/Users/daniel/projects/web/jobsearch/doc/"
+ "/Users/daniel/projects/web/jobsearch/infrastructure/ansible/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/the_divine_cheese_code/"
+ "/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/the_divine_cheese_code/visualization/"
+ "/Users/daniel/projects/web/castra/"
+ "/Users/daniel/projects/web/jobsearch/infrastructure/ansible/files/"
+ "/Users/daniel/projects/web/gp2/infrastructure/ansible/files/"
+ "/Users/daniel/projects/web/adzerk/geir/src/backend/adzerk/api/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/edit/"
+ "/Users/daniel/projects/web/castra/.git/"
+ "/Users/daniel/projects/web/jobsearch/resources/"
+ "/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/resources/admin/"
+ "/Users/daniel/.ssh/"
+ "/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/handlers/"
+ "/Users/daniel/projects/web/blog/content/assets/stylesheets/"
+ "/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/feed_items/"
+ "/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/opportunities/"
+ "/Users/daniel/projects/web/blog/content/programming/"
+ "/Users/daniel/projects/web/blog/content/penguins/"
+ "/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/feeds/"
+ "/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/inventory/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "reducer_examples.clj"
+ "common.clj"
+ "build.boot"
+ "README.md"
+ "code_of_conduct.md"
+ "reducers.clj"
+ "reducers.asc"
+ "concurrency-talk.org"
+ "adzerk.org"
+ "edit.cljs.hl"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/reducers/" (22145 61139 0 0) "target/" "build.boot" ".nrepl-port" "../" "./")
+
+ ("/Users/daniel/projects/play/quil-pix/src/quil_pix/" (21930 64062 0 0) "scan.clj" "reducers.clj" "dim.clj" "common.clj" "blur.clj" "../" "./")
+
+ ("/Users/daniel/projects/play/quil-pix/src/" (21922 43095 0 0) "quil_pix/" "../" "./")
+
+ ("/Users/daniel/projects/play/quil-pix/" (21947 24882 0 0) "src/" "resources/" "README.md" "notes.org" "logs.txt" "images/" "build.boot" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/play/" (21959 55078 0 0) "zippers/" "yasnippet-snippets/" "sicpclj/" "sedawk/" "re-frame/" "quil-pix/" "progit2/" "omtut/" "nanoc-tut/" "nand2tetris/" "lispy/" "holygrail/" "hello-quil/" "haskell/" "flappy-bird-demo/" "clojure-on-lisp/" "clojure-getting-started/" "clojure/" "cljs-ajax-test/" "cljs/" "cider-demo/" "boot-cljs-example/" "boot/" "ascbook/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/" (22150 60045 0 0) "VirtualBox VMs/" "tmp/" "target/" "src/" "Public/" "provision.retry" "projects/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev" "Desktop/" "deploy.retry" "Creative Cloud Files/" "bin/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Whoopdee Doo-5.0.5" ".zcompdump-MacBook Pro-5.0.5" ".zcompdump-Daniel’s MacBook Pro-5.0.5" ".zcompdump-Daniel’s MacBook Air-5.0.5" ".zcompdump-blorpmorpchorp-5.0.5" ".zcompdump" ".vimrc" ".viminfo" ".vagrant.d/" ".Trash/" ".tmuxinator/" ".tmux.conf" ".subversion/" ".ssh/" ".s3cfg" ".ruby-version" ".rubies/" ".recently-used" ".putty/" ".psql_history" ".profile" ".oracle_jre_usage/" ".oh-my-zsh/" ".nrepl-history" ".npm/" ".node-gyp/" ".netrc" ".nbprofiler/" ".mplayer/" ".mono/" ".m2/" ".localrc" ".local/" ".lesshst" ".lein/" ".java_history" ".irbrc" ".irb_history" ".InstallAnywhere/" ".hughlogin" ".heroku/" ".guard_history" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dotfiles/" ".docker/" ".dbeaver/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".boot/" ".bashrc" ".bash_profile" ".bash_history" ".aws/" ".ansible/" ".adzerk.asc" ".adobe/" ".ackrc" "../" "./")
+
+ ("/Users/daniel/projects/web/jso/" (21893 37095 0 0) "test/" "system.properties" "src/" "resources/" "README.md" "project.clj" "Procfile" "LICENSE" "env/" "code_of_conduct.md" ".gitignore" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/" (22131 4147 0 0) "target/" "src/" "resources/" "infrastructure/" "doc/" "design/" "build.boot" ".projectile" ".nrepl-history" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/lib/" (22131 3627 0 0) "toc_filter.rb" "rule_helper.rb" "redcarpet_syntax_highlighter.rb" "item_helpers.rb" "default.rb" "asciidoctor.rb" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/" (22131 3657 0 0) "tmp/" "static/" "Rules" "README.md" "output/" "nanoc.yaml" "move.sh" "lib/" "layouts/" "Guardfile" "Gemfile.lock" "Gemfile" "doc/" "crash.log" "content/" ".sass-cache/" ".lein-env" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/quests/" (22144 22878 0 0) "reducers.asc" "example.asc" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/campaigns/flights/" (22137 47773 0 0) "site_zone_targeting.cljs.hl" "geotargeting.cljs.hl" "edit.cljs.hl" "creative.cljs.hl" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/" (22137 43796 0 0) "user.cljs.hl" "ui/" "rpc.cljs.hl" "routes.cljs.hl" "routes.clj" "entity.cljs" "crud.cljs.hl" "constants.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/ui/form/" (22137 31495 0 0) "tokenfield-impl.cljs.hl" "input.cljs.hl" "datepicker_impl.cljs.hl" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/ui/" (22137 31495 0 0) "util.cljs" "typeahead.cljs.hl" "test.cljs" "screen.cljs.hl" "screen.clj" "route.cljs.hl" "route.clj" "paging.cljs.hl" "paging.clj" "navbar.cljs.hl" "modal.cljs.hl" "misc.cljs.hl" "link.cljs.hl" "icon.cljs.hl" "hacks.cljs.hl" "grid.cljs.hl" "global_state.cljs.hl" "form.cljs.hl" "form.clj" "form/" "filters.cljs.hl" "drilldown.cljs.hl" "component.cljs.hl" "button.cljs.hl" "app.cljs.hl" "app.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/" (22137 31495 0 0) "workflow/" "ui/" "index.cljs.hl" "extern/" "deps.cljs" "app/" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/inventory/" (22137 31495 0 0) "sites_by_channel.cljs.hl" "sites.cljs.hl" "priorities.cljs.hl" "channels.cljs.hl" "adtypes.cljs.hl" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/campaigns/" (22137 31495 0 0) "flights.cljs.hl" "campaign_components.cljs.hl" "all_campaigns.cljs.hl" "advertisers.cljs.hl" "advertiser_campaigns.cljs.hl" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/edit/" (22137 40295 0 0) "geotargeting.cljs.hl" "flight.cljs.hl" "creative.cljs.hl" "../" "./")
+
+ ("/Users/daniel/projects/web/castra/src/castra/" (22137 27762 0 0) "middleware.clj" "core.cljs" "core.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/castra/" (22137 27762 0 0) "test/" "target/" "src/" "script/" "README.md" "img/" "build.boot" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/" (22137 27621 0 0) "ui/" "test/" "target/" "start.sh" "src/" "shell.sh" "resources/" "README.md" "Makefile" "m2/" "examples/" "Dockerrun.aws.json" "Dockerfile" "build.boot" "boot.properties" ".travis.yml~" ".s3cfg" ".projectile" ".nrepl-port" ".gitignore" ".git/" ".elasticbeanstalk/" ".ebextensions/" ".agignore" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/backend/adzerk/api/" (22136 10680 0 0) "management.clj" "geir.clj" "../" "./")
+
+ ("/Users/daniel/Dropbox/" (22133 60862 0 0) "YESANDLIFE/" "wedding/" "time_stories_rules_us.pdf" "The Plan.pages" "shares/" "Screenshots/" "scratch/" "resources/" "Public/" "projects/" "polya.pdf" "Photos/" "org-life/" "Icon
+" "goofy/" "docs/" "clojure-for-the-brave-and-true/" "apps/" "app data/" ".ynabSettings.yroot" ".ws.agile.1Password.settings" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/backend/geir_backend/" (22136 10712 0 0) "view.clj" "validation.clj" "util.clj" "strint.clj" "server.clj" "query.clj" "instrumentation.clj" "db.clj" "core.clj" "constants.clj" "../" "./")
+
+ ("/Users/daniel/.m2/repository/hoplon/castra/3.0.0-alpha1/" (22136 8676 0 0) "castra-3.0.0-alpha1.pom.sha1" "castra-3.0.0-alpha1.pom" "castra-3.0.0-alpha1.jar.sha1" "castra-3.0.0-alpha1.jar" "_maven.repositories" "../" "./")
+
+ ("/Users/daniel/.m2/repository/hoplon/castra/" (22136 8675 0 0) "maven-metadata-local.xml" "3.0.0-alpha1/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/hoplon/" (22128 25431 0 0) "javelin/" "hoplon/" "castra/" "boot-hoplon/" "../" "./")
+
+ ("/Users/daniel/projects/web/" (22113 56973 0 0) "yesandministry/" "yesandlife/" "yasnippet-snippets/" "webutils/" "webstack/" "weatherjerk/" "thrive/" "test-package/" "system/" "streaming-proxy/" "statsd-client/" "README.md" "rabble/" "playsync-old/" "playsync/" "penny-black/" "pegthing/" "packages/" "myhubot/" "mwd-reagent/" "moonstuff/" "minimal-hoplon/" "minimal-cljs/" "magewars-spellbook-demo/" "magewars-spellbook/" "magewars-deckbuilder/" "magepunch/" "lovefearlove/" "liberator-unbound/" "last-go/" "jso/" "jobsearch/" "httpkit-example/" "hermes/" "gromit/" "gp2/" "getquotes/" "enlive/" "email/" "emacs-for-clojure/" "Downloads/" "datomic-junk/" "cocktails/" "clojure-noob/" "cljs-ajax/" "clean-up-your-mess/" "castra/" "brave-clojure/" "boot-walkthrough/" "boot-environ/" "blog/" "async-proxy/" "archive/" "afterthepinkslip/" "adzerk/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/" (22131 3627 0 0) "quests/" "partials/" "index.html" "chapter.md" "cftbat/" "assets/" "../" "./")
+
+ ("/Users/daniel/.emacs.d/elpa/adoc-mode-20151119.914/" (22131 2650 0 0) "adoc-mode.elc" "adoc-mode.el" "adoc-mode-pkg.elc" "adoc-mode-pkg.el" "adoc-mode-autoloads.el" "../" "./")
+
+ ("/Users/daniel/.emacs.d/elpa/" (22131 2648 0 0) "yasnippet-20141223.303/" "yaml-mode-20141125.37/" "web-mode-20150606.1025/" "thesaurus-20121125.1937/" "tagedit-20141021.2139/" "spinner-1.4/" "smex-20141210.1422/" "seq-20151028.759/" "scss-mode-20150107.1400/" "s-20140910.334/" "rainbow-delimiters-20141221.925/" "queue-0.1.1/" "projectile-20151111.2318/" "pkg-info-20140610.630/" "php-mode-1.17.0/" "peg-20150707.2341/" "paredit-20150126.155/" "noflet-20141102.654/" "multiple-cursors-20150528.2303/" "markup-faces-20130117.246/" "markdown-mode-20150121.1229/" "magit-20150124.930/" "inflections-20121016.157/" "ido-ubiquitous-20141210.1353/" "hydra-20151030.1203/" "haskell-mode-20150202.632/" "haml-mode-20141213.920/" "git-rebase-mode-20150122.1114/" "git-gutter-20150106.659/" "git-commit-mode-20141014.1634/" "exec-path-from-shell-20141212.846/" "epl-20140823.609/" "enh-ruby-mode-20140901.1222/" "edn-20150929.146/" "dockerfile-mode-20141208.1939/" "dash-20151021.113/" "company-20150204.836/" "coffee-mode-20150130.1627/" "clojure-mode-readme.txt" "clojure-mode-extra-font-locking-20150110.505/" "clojure-mode-5.0.0/" "clj-refactor-20151112.117/" "cl-lib-0.5/" "cider-readme.txt" "cider-20151119.931/" "archives/" "ag-20150105.1314/" "adoc-mode-20151119.914/" "adoc-mode-20150524.909/" "ack-and-a-half-20130815.1917/" "2048-game-readme.txt" "../" "./")
+
+ ("/Users/daniel/.emacs.d/" (22131 2384 0 0) "vendor/" "themes/" "snippets/" "README.md" "projectile.cache" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "bookmarks" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/" (22131 2220 0 0) "tmp/" "static/" "Rules" "output/" "nanoc.yaml" "move.sh" "lib/" "layouts/" "Guardfile" "Gemfile.lock" "Gemfile" "doc/" "crash.log" "content/" ".sass-cache/" ".projectile" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/" (22131 2220 0 0) "quests/" "partials/" "index.html" "chapter.md" "cftbat/" "assets/" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/quests/" (22131 2384 0 0) "reducers.asc" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/cftbat/" (21992 57458 0 0) "zombie-metaphysics.html" "writing-macros.html" "read-and-eval.html" "organization.html" "multimethods-records-protocols.html" "java.html" "introduction.html" "getting-started.html" "functional-programming.html" "foreword.html" "do-things.html" "core-functions-in-depth.html" "core-async.html" "concurrency.html" "basic-emacs.html" "appendix-b.html" "appendix-a.html" "afterword.html" "acknowledgements.html" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/partials/" (21884 27367 0 0) "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/" (22128 43173 0 0) "README.md" "13/" "12/" "11/" "10/" "09/" "08/" "07/" "06/" "05/" "04/" "03/" "02/" "01/" ".git/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/com/datomic/datomic-free/0.9.5206/" (21972 55109 0 0) "datomic-free-0.9.5206.pom.sha1" "datomic-free-0.9.5206.pom" "datomic-free-0.9.5206.jar.sha1" "datomic-free-0.9.5206.jar" "_maven.repositories" "../" "./")
+
+ ("/Users/daniel/.m2/repository/com/datomic/datomic-free/" (21972 55096 0 0) "0.9.5206/" "0.9.5186/" "0.9.5078/" "0.9.5052/" "0.9.4956/" "0.9.4880/" "0.8.3397/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/com/datomic/" (21921 39800 0 0) "datomic-lucene-core/" "datomic-free/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/com/" (21923 65012 0 0) "taoensso/" "sun/" "stuartsierra/" "rabbitmq/" "novemberain/" "lowagie/" "keminglabs/" "jolbox/" "jcraft/" "jamesmurty/" "ibm/" "h2database/" "googlecode/" "google/" "flyingmachine/" "fasterxml/" "facebook/" "draines/" "datomic/" "cognitect/" "cemerick/" "andrewmcveigh/" "amazonaws/" "../" "./")
+
+ ("/Users/daniel/tmp/" (22130 52582 0 0) "postmortem" "local-docker-dev.md" "hammer.js-2.0.4/" "daniel-application.css" "build.boot" "boot-test/" "2.0.4.zip" "../" "./")
+
+ ("/Users/daniel/tmp/boot-test/" (22130 52777 0 0) "target/" "src/" "build.boot" "../" "./")
+
+ ("/Users/daniel/.boot/" (22096 47371 0 0) "profile.boot" "cache/" "boot.properties" "../" "./")
+
+ ("/Users/daniel/.m2/repository/jeluard/boot-notify/0.2.0/" (22130 51149 0 0) "boot-notify-0.2.0.pom.sha1" "boot-notify-0.2.0.pom" "boot-notify-0.2.0.jar.sha1" "boot-notify-0.2.0.jar" "_maven.repositories" "../" "./")
+
+ ("/Users/daniel/.m2/repository/jeluard/boot-notify/" (22130 51148 0 0) "0.2.0/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/jeluard/" (22130 51148 0 0) "boot-notify/" "../" "./")
+
+ ("/Users/daniel/.m2/repository/" (22130 51148 0 0) "xml-apis/" "xerces/" "weasel/" "watchtower/" "version-clj/" "utilize/" "trptcolin/" "tigris/" "tailrecursion/" "swiss-arrows/" "stencil/" "spyscope/" "spy/" "slingshot/" "secretary/" "scout/" "sablono/" "s3-wagon-private/" "robert/" "ring-transit/" "ring-server/" "ring-refresh/" "ring-mock/" "ring-middleware-format/" "ring-cors/" "ring/" "riddley/" "rewrite-clj/" "reply/" "reloaded/" "refactor-nrepl/" "reagent/" "re-frame/" "quoin/" "quil/" "prismatic/" "primitive-math/" "potemkin/" "postgresql/" "pjstadig/" "pathetic/" "pandeiro/" "pandect/" "org/" "ordered/" "om-sync/" "om/" "ns-tracker/" "noencore/" "net/" "mvxcvi/" "midje/" "medley/" "mathias/" "log4j/" "liberator/" "leinjacker/" "lein-ring/" "lein-midje/" "lein-light-nrepl/" "lein-figwheel/" "lein-environ/" "lein-cljsbuild/" "lein-cljbuild/" "lein-ancient/" "junit/" "jumblerg/" "joda-time/" "jline/" "jeluard/" "jdom/" "javelin/" "javazoom/" "javax/" "java-jdbc/" "io/" "instaparse/" "inflections/" "ibdknox/" "http-kit/" "hoplon/" "honeysql/" "hiccup/" "gui-diff/" "fs/" "fogus/" "flyingmachine/" "figwheel-sidecar/" "figwheel/" "feedparser-clj/" "fast-zip/" "environ/" "enlive/" "dynapath/" "doric/" "domina/" "digest/" "defprecated/" "debugger/" "de/" "datomic-session/" "danielsz/" "crypto-random/" "crypto-equality/" "crouton/" "compojure/" "compliment/" "commons-logging/" "commons-io/" "commons-httpclient/" "commons-fileupload/" "commons-codec/" "com/" "colorize/" "clout/" "clojurewerkz/" "clojurescript-build/" "clojure-humanize/" "clojure-complete/" "cljsjs/" "cljsbuild/" "cljs-tooling/" "cljs-ajax/" "cljfmt/" "clj-yaml/" "clj-tuple/" "clj-time/" "clj-tagsoup/" "clj-statsd/" "clj-stacktrace/" "clj-jgit/" "clj-http-lite/" "clj-http/" "clj-aws-s3/" "cider/" "chestnut/" "cheshire/" "camel-snake-kebab/" "c3p0/" "byte-streams/" "bouncycastle/" "boot-sassc/" "boot-environ/" "boot-deps/" "boot-cljs-test/" "boot/" "biz/" "bidi/" "args4j/" "aopalliance/" "ancient-clj/" "alandipert/" "adzerk/" "adamwynne/" "../" "./")
+
+ ("/Users/daniel/.m2/" (22096 47067 0 0) "repository/" "repo-back2/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/lib/" (22114 13840 0 0) "email.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/infrastructure/ansible/files/" (22127 25650 0 0) "nginx.conf" "jobsearch-upstart.conf" "env" "datomic-upstart.conf" "datomic-transactor.properties" "certs/" "app.jar" ".lein-env.example" ".lein-env" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/the_divine_cheese_code/visualization/" (22102 17548 0 0) "svg.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/the_divine_cheese_code/" (22102 17548 0 0) "visualization/" "core.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/src/" (22004 23565 0 0) "the_divine_cheese_code/" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/the-divine-cheese-code/" (22102 16513 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "map.html" "LICENSE" "doc/" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat-code/06/" (22004 24222 0 0) "the-divine-cheese-code/" "README.md" "code.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/bc-pdf-conv/" (22004 17538 0 0) "target/" "src/" "build.boot" ".nrepl-history" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/backend/" (21969 57902 0 0) "geir_backend/" "adzerk/" "../" "./")
+
+ ("/Users/daniel/projects/" (21797 25729 0 0) "web/" "play/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/src/" (21933 3320 0 0) "ruby-2.1.3.tar.bz2" "ruby-2.1.3/" "datomic/" "../" "./")
+
+ ("/Users/" (21921 27276 0 0) "Shared/" "Guest/" "daniel/" ".localized" "../" "./")
+
+ ("/Users/daniel/projects/web/castra/src/" (22127 10585 0 0) "castra/" "../" "./")
+
+ ("/Users/daniel/projects/web/gp2/infrastructure/ansible/files/" (21205 62513 0 0) "profiles.clj" "gp2.jar" "gp2-upstart.conf" "env" "datomic-upstart.conf" "datomic-transactor.properties" ".lein-env.example" ".lein-env" "../" "./")
+
+ ("/Users/daniel/projects/web/gp2/infrastructure/ansible/" (21205 62427 0 0) "vendor/" "provision.yml" "prod" "group_vars/" "files/" "dev" "deploy.yml" "demo" "../" "./")
+
+ ("/Users/daniel/projects/web/gp2/infrastructure/" (20965 63548 0 0) "Vagrantfile" "ansible/" ".vagrant/" "../" "./")
+
+ ("/Users/daniel/projects/web/castra/.git/" (22127 10248 0 0) "refs/" "packed-refs" "objects/" "logs/" "info/" "index" "hooks/" "HEAD" "FETCH_HEAD" "description" "config" "COMMIT_EDITMSG" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/resources/" (22103 10856 0 0) "resources_tab.cljs" "../" "./")
+
+ ("/Users/daniel/.ssh/" (22050 23727 0 0) "tigger.pem.asc" "tigger.pem" "known_hosts" "id_rsa.pub" "id_rsa" "config" "adzerk.pem" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/resources/admin/" (22123 7819 0 0) "users.clj" "password.clj" "init_state.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/" (22114 13840 0 0) "utils.clj" "system.clj" "resources/" "middleware/" "lib/" "handler/" "feeds/" "db/" "core.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/handler/" (22114 13840 0 0) "routes.clj" "app.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/admin/" (22114 13840 0 0) "users.cljs" "subs.cljs" "handlers.cljs" "db.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/content/assets/stylesheets/" (21673 62251 0 0) "pygments.scss" "main.scss" "_theme.scss" "_layout.scss" "_home.scss" "_base.scss" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/content/assets/" (21673 62251 0 0) "stylesheets/" "images/" "apps/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/opportunities/" (22114 13840 0 0) "selected_opportunity.cljs" "opportunity_tab.cljs" "opportunity_list.cljs" "opportunity_form.cljs" "help.cljs" "edit_opportunity.cljs" "calendar_link.cljs" "add_opportunity.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/content/programming/" (22078 7890 0 0) "writing-better-documentation.md" "whoops-dci-refactoring.md" "vern-fixtures.md" "to-the-printers.md" "tmux-in-5-minutes.md" "three-dev-tools.md" "the-unofficial-guide-to-rich-hickeys-brain.md" "tech-lead-lessons-learned.md" "rubyprofhelper-ruby-prof-boilerplate.md" "refactoring-to-datamappers-in-clojure.md" "rails-prototypal-attributes.md" "new-chapter-java.md" "new-chapter-concurrency.md" "minimax.md" "lein-trampoline.md" "how-clojure-babies-are-made-what-leiningen-is.md" "how-clojure-babies-are-made-the-java-cycle.md" "how-clojure-babies-are-made-lein-run.md" "higml.md" "hey-rubyists-try-clojure.md" "global-noir-routes.md" "foreman-released.md" "foreman-paper-prototypes.md" "follow-your-followers-using-ruby.md" "first-noir-app-notes.md" "dissecting-omgsmackdown.md" "dissecting-gratefulplace.md" "datomic-for-five-year-olds.md" "core-async-chapter.md" "conj-2014.md" "clojurers-to-follow.md" "clojure-packages.md" "clojure-applied-review.md" "chunky-iterator.md" "chunky-bacon-lisp.md" "building-a-forum-with-clojure-datomic-angular.md" "brave-and-true-early-access.md" "brave-and-new.md" "boot-clj.md" "book-deal.md" "aikidoka-prevents-namespace-collisions.md" "a-taste-of-the-lambda-calculus.md" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/content/penguins/" (22120 18095 0 0) "robots.md" "my-failed-social-web-experiment.md" "machine-aided-introspection.textile" "job-search-sanity.md" "job-search-beta.md" "how-to-conference.md" "abstract-math.textile" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/resources/" (22120 17566 0 0) "schemas/" "sass/" "reset-password.html" "index.html" "images/" "forgot-password.html" "fixtures/" "favicon.ico/" "app.html" "admin.html" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/feeds/" (22103 10856 0 0) "feed_tab.cljs" "feed_list.cljs" "add_feed.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/feed_items/" (22103 10856 0 0) "selected_feed_item.cljs" "feed_item_tab.cljs" "feed_item_list.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/components/" (22114 13840 0 0) "ui.cljs" "tabs.cljs" "resources/" "opportunities/" "interview_reminders/" "form_helpers.cljs" "feeds/" "feed_items/" "cover_letters/" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/content/" (21956 49734 0 0) "programming/" "penguins/" "javascripts/" "index.haml" "im-going-to-take-all-the-help-i-can-get.textile" "foreman/" "essays/" "design.textile" "design/" "control-time-submitted-to-app-store.textile" "communication/" "blog-reboot.textile" "atom.haml" "assets/" "about.textile" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/blog/" (21673 62251 0 0) "tmp/" "static/" "Rules" "README" "Rakefile" "output/" "lib/" "layouts/" "Guardfile" "Gemfile.lock" "Gemfile" "crash.log" "content/" "config.yaml" "compass/" ".sass-cache/" ".gitignore" ".git/" ".bundle/" "../" "./")
+
+ ("/Users/daniel/Dropbox/org-life/" (22074 18075 0 0) "writing-process.md" "work/" "projects.org_archive" "projects.org" "projects/" "org-mode/" "notes.org" "learning/" "debug-journal.org" "concurrency-talk.org" "clojure/" "braveclojure/" "books/" "book-recipients.org" "adzerk.org" ".lein-env" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/" (21933 6330 0 0) "jotunheimr/" "geir-backend/" "geir/" "cli-tools/" "baldr/" "adzerk.core/" "adzerk/" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/" (22007 3020 0 0) "generated/" "frontend/" "boot/" "backend/" "../" "./")
+
+ ("/Users/daniel/projects/web/adzerk/geir/src/frontend/app/ui/" (22094 5268 0 0) "nav.cljs.hl" "login.cljs.hl" "loading.cljs.hl" "inventory/" "edit/" "component.cljs.hl" "campaigns/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/resources/sass/" (22114 13840 0 0) "pygments.scss" "main.scss" "bower_components/" "bower.json" "_type.scss" "_theme.scss" "_meyer-reset.scss" "_layout.scss" "_home.scss" "_forgot-password.scss" "_compass-typography.scss" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/assets/stylesheets/" (21805 12239 0 0) "tipuesearch.css" "tiptuesearch.css" "pygments.scss" "main.scss" "documentation.scss" "_theme.scss" "_layout.scss" "_base.scss" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/brave-clojure-web/content/assets/" (21031 61255 0 0) "stylesheets/" "javascripts/" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/" (22075 33279 0 0) "random-quote/" "pegthing/" "marketing/" "cftbat-code/" "cftbat/" "brave-clojure-web/" "bc-pdf-conv/" ".DS_Store" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/assets/stylesheets/" (21888 10923 0 0) "pygments.scss" "main.scss" "_type.scss" "_theme.scss" "_meyer-reset.scss" "_layout.scss" "_home.scss" "_compass-setup.scss" "../" "./")
+
+ ("/Users/daniel/projects/web/brave-clojure/cftbat/content/assets/" (21887 9959 0 0) "stylesheets/" "scripts/" "images/" ".sass-cache/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/" (22114 13840 0 0) "utils.cljs" "subs.cljs" "mounts/" "home.cljs" "handlers.cljs" "handlers/" "db.cljs" "core.cljs" "constants.cljs" "components/" "app.cljs" "admin.cljs" "admin/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/backend/jobsearch/resources/" (22114 13840 0 0) "users.clj" "opportunities.clj" "multiple_feeds.clj" "interview_reminders.clj" "init_state.clj" "feeds.clj" "feed_items.clj" "default_decisions.clj" "credential_recovery/" "cover_letters.clj" "common.clj" "calendar.clj" "admin/" "../" "./")
+
+ ("/Users/daniel/projects/web/jobsearch/src/frontend/jobsearch/handlers/" (22114 13840 0 0) "ui.cljs" "reset_password.cljs" "opportunities.cljs" "multi_feeds.cljs" "login.cljs" "interview_reminders.cljs" "initialize.cljs" "forgot_password.cljs" "feeds.cljs" "feed_items.cljs" "cover_letters.cljs" "common.cljs" "../" "./")
+
+ ("/Users/daniel/projects/web/rabble/src/rabble/" (21454 63943 0 0) "test/" "ring_app.clj" "resources/" "paths.clj" "models/" "middleware/" "lib/" "handlers/" "email/" "db/" "config.clj" "../" "./")
+
+ ("/Users/daniel/projects/web/rabble/src/" (21184 16962 0 0) "rabble/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
