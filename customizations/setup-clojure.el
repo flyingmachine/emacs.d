@@ -2,8 +2,8 @@
 ;; Clojure
 ;;;;
 
-(require 'cider)
-(require 'clj-refactor)
+;; (require 'cider)
+;; (require 'clj-refactor)
 
 ;; turn off ansi in boot
 (setenv "BOOT_COLOR" "off")
@@ -16,14 +16,12 @@
 (add-hook 'clojure-mode-hook 'subword-mode)
 
 ;; A little more syntax highlighting
-(require 'clojure-mode-extra-font-locking)
+;; (require 'clojure-mode-extra-font-locking)
 
 
 ;; syntax hilighting and indentation
 (setq clojure-defun-style-default-indent nil)
-(define-clojure-indent
-  (-> 0)
-  (->> 0))
+
 (setq clojure-om-dom-syms '(div ul h2 transact! table tr td li tbody label root form
                                 select option span))
 (setq clojure-reframe-syms '(register-handler))
@@ -39,7 +37,11 @@
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
             (dolist (sym (append clojure-midje-syms clojure-om-dom-syms clojure-reframe-syms))
-              (put-clojure-indent sym 'defun))))
+              (put-clojure-indent sym 'defun))
+
+            (define-clojure-indent
+              (-> 0)
+              (->> 0))))
 
 ;;;;
 ;; Cider

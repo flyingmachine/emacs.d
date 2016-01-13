@@ -102,3 +102,6 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+;; open files in existing frame
+(setq ns-pop-up-frames nil)
