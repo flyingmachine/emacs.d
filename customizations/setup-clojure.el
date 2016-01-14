@@ -9,11 +9,11 @@
 (setenv "BOOT_COLOR" "off")
 
 ;; Enable paredit for Clojure
-(add-hook 'clojure-mode-hook 'enable-paredit-mode)
+;; (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
 ;; This is useful for working with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
-(add-hook 'clojure-mode-hook 'subword-mode)
+;; (add-hook 'clojure-mode-hook 'subword-mode)
 
 ;; A little more syntax highlighting
 ;; (require 'clojure-mode-extra-font-locking)
@@ -39,9 +39,8 @@
             (dolist (sym (append clojure-midje-syms clojure-om-dom-syms clojure-reframe-syms))
               (put-clojure-indent sym 'defun))
 
-            (define-clojure-indent
-              (-> 0)
-              (->> 0))))
+            (enable-paredit-mode)
+            (subword-mode)))
 
 ;;;;
 ;; Cider
