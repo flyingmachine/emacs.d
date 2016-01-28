@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (22095 38419
+;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (22185 33279
 ;;;;;;  0 0))
 ;;; Generated autoloads from clj-refactor.el
 
@@ -31,49 +31,32 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-rename-file-or-d
 
 \(fn NEW-PATH)" t nil)
 
-(autoload 'cljr-sort-ns "clj-refactor" "\
-Sort the `ns' form according to `cljr-sort-comparator'.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-sort-ns
-
-\(fn)" t nil)
-
-(autoload 'cljr-remove-unused-requires "clj-refactor" "\
-Remove from the ns form any requires not being used.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-remove-unused-requires
-
-\(fn)" t nil)
-
 (autoload 'cljr-add-require-to-ns "clj-refactor" "\
 Add a require statement to the ns form in current buffer.
 
+With a prefix act on the cljs part of the ns declaration.
+
 See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-require-to-ns
 
-\(fn)" t nil)
+\(fn CLJS\\?)" t nil)
 
 (autoload 'cljr-add-use-to-ns "clj-refactor" "\
 Add a use statement to the buffer's ns form.
 
+With a prefix act on the cljs part of the ns declaration.
+
 See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-use-to-ns
 
-\(fn)" t nil)
+\(fn CLJS\\?)" t nil)
 
 (autoload 'cljr-add-import-to-ns "clj-refactor" "\
 Add an import statement to the buffer's ns form.
 
+With a prefix act on the cljs part of the ns declaration.
+
 See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-import-to-ns
 
-\(fn)" t nil)
-
-(autoload 'cljr-replace-use "clj-refactor" "\
-Replace any :use clause with the equivalent :require clause.
-
-Presently, there's no support for :use clauses containing :exclude.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-replace-use
-
-\(fn)" t nil)
+\(fn &optional CLJS\\?)" t nil)
 
 (autoload 'cljr-stop-referring "clj-refactor" "\
 Stop referring to vars in the namespace at point.
@@ -387,7 +370,7 @@ A mode to keep the clj-refactor keybindings.
 
 ;;;***
 
-;;;### (autoloads nil nil ("clj-refactor-pkg.el") (22095 38419 807219
+;;;### (autoloads nil nil ("clj-refactor-pkg.el") (22185 33279 209263
 ;;;;;;  0))
 
 ;;;***
