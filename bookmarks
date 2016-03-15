@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("cljobs"
+(("open-source"
+ (filename . "~/projects/web/open-source/build.boot")
+ (front-context-string . "(set-env!\n :sour")
+ (rear-context-string)
+ (position . 1))
+("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")
  (rear-context-string)
