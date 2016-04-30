@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("open-source"
+(("stack"
+ (filename . "~/projects/play/stack/build.boot")
+ (front-context-string . "(set-env!\n :sour")
+ (rear-context-string)
+ (position . 1))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/org-life/learning/org-mode/org-play.org")
+ (front-context-string . "** subtree\na\n***")
+ (rear-context-string . " woot\n**** test\n")
+ (position . 232))
+("open-source"
  (filename . "~/projects/web/open-source/build.boot")
  (front-context-string . "(set-env!\n :sour")
  (rear-context-string)

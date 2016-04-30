@@ -110,16 +110,14 @@
 
 (defun cider-user-ns ()
   (interactive)
-  (cider-repl-set-ns "user"))
+  (cider-repl-set-ns "boot.user"))
 
 (eval-after-load 'cider
   '(progn
-     (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
-     (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
-     (define-key clojure-mode-map (kbd "C-M-g") 'cider-user-go)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)
-     (define-key cider-mode-map (kbd "C-c r") 'cider-switch-to-repl-buffer)))
+     (define-key cider-mode-map (kbd "C-c r") 'cider-switch-to-repl-buffer)
+     (define-key cider-repl-mode-map (kbd "C-c u") 'cider-user-ns)))
 
 (defun clj-align-vectors (beg end)
   (interactive "r")
