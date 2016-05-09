@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("stack"
+(("doodles.org"
+ (filename . "~/Dropbox/org-life/personal/doodles.org")
+ (front-context-string . "* stuff I want t")
+ (rear-context-string)
+ (position . 1))
+("stack"
  (filename . "~/projects/play/stack/build.boot")
  (front-context-string . "(set-env!\n :sour")
  (rear-context-string)
