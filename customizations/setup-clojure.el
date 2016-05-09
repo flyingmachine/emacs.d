@@ -50,8 +50,8 @@
 (add-hook 'cider-mode-hook 'eldoc-mode)
 
 ;; autocomplete
-;; (add-hook 'cider-repl-mode-hook #'company-mode)
-;; (add-hook 'cider-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-mode-hook #'company-mode)
 
 ;; go right to the REPL buffer when it's finished connecting
 (setq cider-repl-pop-to-buffer-on-connect t)
