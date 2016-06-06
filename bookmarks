@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("doodles.org"
+(("training"
+ (filename . "~/projects/web/training/exercises/project.clj")
+ (front-context-string . "(defproject trai")
+ (rear-context-string)
+ (position . 1))
+("capital-one-outline.org"
+ (filename . "~/Dropbox/org-life/projects/capital-one-outline.org")
+ (front-context-string . "* Course outline")
+ (rear-context-string)
+ (position . 1))
+("doodles.org"
  (filename . "~/Dropbox/org-life/personal/doodles.org")
  (front-context-string . "* stuff I want t")
  (rear-context-string)

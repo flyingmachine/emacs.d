@@ -17,11 +17,14 @@
 
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
+;; (add-to-list 'package-pinned-packages '(helm-projectile . "melpa-stable") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
 (package-initialize)
+(setq package-enable-at-startup nil)
+(require 'use-package)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
@@ -137,6 +140,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; helm
+(load "setup-helm.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
@@ -145,6 +151,7 @@
 (load "setup-org.el")
 (load "setup-prolog.el")
 (load "setup-ruby.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
