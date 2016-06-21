@@ -23,7 +23,7 @@
 ;; Configure the mode line
 (setq-default mode-line-format
               '((:eval (propertize " %b" 'face 'mode-line-highlight))
-                " %l:%c  %m"))
+                " %l:%c %p %m"))
 
 ;; typography
 (setq-default line-spacing nil)

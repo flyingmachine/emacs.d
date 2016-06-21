@@ -183,8 +183,8 @@ First call indent, second complete symbol, third complete fname."
       helm-default-external-file-browser              "thunar"
       helm-pdfgrep-default-read-command               "evince --page-label=%p '%f'"
       helm-ff-auto-update-initial-value               t
-      helm-grep-default-command                       "ack-grep -Hn --color --smart-case --no-group %e %p %f"
-      helm-grep-default-recurse-command               "ack-grep -H --color --smart-case --no-group %e %p %f"
+      helm-grep-default-command                       "grep -Hn --color --smart-case --no-group %e %p %f"
+      helm-grep-default-recurse-command               "grep -H --color --smart-case --no-group %e %p %f"
       helm-reuse-last-window-split-state              t
       helm-always-two-windows                         t
       helm-split-window-in-side-p                     nil
@@ -196,7 +196,7 @@ First call indent, second complete symbol, third complete fname."
       helm-surfraw-duckduckgo-url
       "https://duckduckgo.com/?q=%s&ke=-1&kf=fw&kl=fr-fr&kr=b&k1=-1&k4=-1"
       helm-boring-file-regexp-list
-      '("\\.git$" "\\.hg$" "\\.svn$" "\\.CVS$" "\\._darcs$" "\\.la$" "\\.o$" "\\.i$")
+      '("\\.git$" "\\.hg$" "\\.svn$" "\\.CVS$" "\\._darcs$" "\\.la$" "\\.o$" "\\.i$" "\\.$")
       helm-buffer-skip-remote-checking                t
       helm-apropos-fuzzy-match                        t
       helm-M-x-fuzzy-match                            t
@@ -225,9 +225,9 @@ First call indent, second complete symbol, third complete fname."
       helm-wikipedia-summary-url
       "https://fr.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page="
       helm-firefox-show-structure nil
-      helm-turn-on-recentf nil
+      helm-turn-on-recentf t
       helm-mini-default-sources '(helm-source-buffers-list helm-source-buffer-not-found)
-      helm-debug-root-directory "/home/thierry/tmp/helm-debug")
+      helm-ff-skip-boring-files t)
 
 ;; Avoid hitting forbidden directory .gvfs when using find.
 (add-to-list 'completion-ignored-extensions ".gvfs/")
@@ -294,6 +294,17 @@ First call indent, second complete symbol, third complete fname."
   (setq projectile-switch-project-action #'helm-projectile)
   (setq projectile-completion-system 'helm))
 
+;; more custom
+(setq helm-ff-newfile-prompt-p nil)
+;; enter to nav
+(defun fu/helm-find-files-navigate-forward (orig-fun &rest args)
+  (if (file-directory-p (helm-get-selection))
+      (apply orig-fun args)
+    (helm-maybe-exit-minibuffer)))
+(advice-add 'helm-execute-persistent-action :around #'fu/helm-find-files-navigate-forward)
+(define-key helm-find-files-map (kbd "<return>") 'helm-execute-persistent-action)
+(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-c g") 'helm-git-grep)
 
 ;; custom keys
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)

@@ -42,6 +42,9 @@
             (enable-paredit-mode)
             (subword-mode)))
 
+(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
+(add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
+
 ;;;;
 ;; Cider
 ;;;;
@@ -76,7 +79,7 @@
 (defun clj-refactor-hook ()
     (clj-refactor-mode 1)
     (yas-minor-mode 1) ; for adding require/use/import
-    (cljr-add-keybindings-with-prefix "C-c C-m"))
+    (cljr-add-keybindings-with-prefix "C-c C-,"))
 
 (add-hook 'clojure-mode-hook #'clj-refactor-hook)
 
@@ -88,6 +91,7 @@
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
+(add-to-list 'auto-mode-alist '(".cljs.hl$" . clojurescript-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
 ;; key bindings
