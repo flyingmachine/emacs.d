@@ -303,7 +303,7 @@ First call indent, second complete symbol, third complete fname."
     (helm-maybe-exit-minibuffer)))
 (advice-add 'helm-execute-persistent-action :around #'fu/helm-find-files-navigate-forward)
 (define-key helm-find-files-map (kbd "<return>") 'helm-execute-persistent-action)
-(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
 
 ;; custom keys
