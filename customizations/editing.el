@@ -76,3 +76,6 @@
 (setq electric-indent-mode nil)
 
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; crux
+(require 'crux)
