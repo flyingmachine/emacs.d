@@ -2,10 +2,12 @@
 *~$
 places
 .recentf
+.recentf~
 cider-history
 projectile-bookmarks.eld
 projectile.cache
 ido.last
+ido.last~
 auto-save-list
 backups
 archive-contents
