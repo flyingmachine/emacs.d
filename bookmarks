@@ -2,7 +2,28 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("melange"
+(("bengal"
+ (filename . "~/projects/web/reify/bengal/project.clj")
+ (front-context-string . "(defproject beng")
+ (rear-context-string)
+ (position . 1)
+ (annotation . ""))
+("pantry"
+ (filename . "~/projects/web/reify/pantry/project.clj")
+ (front-context-string . "(defproject reif")
+ (rear-context-string)
+ (position . 1))
+("salk"
+ (filename . "~/projects/web/reify/salk/project.clj")
+ (front-context-string . "(defproject salk")
+ (rear-context-string)
+ (position . 1))
+("constant awesome"
+ (filename . "~/projects/web/constant-awesome/build.boot")
+ (front-context-string)
+ (rear-context-string . "nect local-db)))")
+ (position . 2852))
+("melange"
  (filename . "~/projects/web/melange/build.boot")
  (front-context-string . "(ns boot.user)\n\n")
  (rear-context-string)

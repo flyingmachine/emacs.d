@@ -20,12 +20,7 @@
 
 
 ;; syntax hilighting and indentation
-(setq clojure-defun-style-default-indent nil)
-
-(setq clojure-om-dom-syms '(div ul h2 transact! table tr td li tbody label root form
-                                select option span))
-(setq clojure-reframe-syms '(register-handler))
-(setq clojure-midje-syms  '(fact facts))
+(setq clojure-indent-style :align-arguments)
 
 (add-hook 'clojure-mode-hook
           (lambda ()
@@ -36,14 +31,12 @@
                 (1 font-lock-keyword-face))
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
-            (dolist (sym (append clojure-midje-syms clojure-om-dom-syms clojure-reframe-syms))
-              (put-clojure-indent sym 'defun))
 
             (enable-paredit-mode)
             (subword-mode)))
 
-(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
-(add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
+;(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
+;(add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
 
 ;;;;
 ;; Cider
@@ -51,6 +44,7 @@
 
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'eldoc-mode)
+(add-hook 'cider-repl-mode-hook 'eldoc-mode)
 
 ;; autocomplete
 (add-hook 'cider-repl-mode-hook #'company-mode)

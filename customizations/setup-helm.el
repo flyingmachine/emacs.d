@@ -305,6 +305,7 @@ First call indent, second complete symbol, third complete fname."
 (define-key helm-find-files-map (kbd "<return>") 'helm-execute-persistent-action)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
+(global-set-key (kbd "C-x r h") 'helm-bookmarks)
 
 ;; custom keys
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)

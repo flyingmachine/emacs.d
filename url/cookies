@@ -1,0 +1,18 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("spotify.com"
+  [url-cookie "sp_t" "ec135fc2c3580765a9914072036b8d17" "06-Jul-2018 14:18:01.00 GMT" "/" "spotify.com" nil]
+  [url-cookie "Max-Age" "63072000" "06-Jul-2018 14:18:01.00 GMT" "/" "spotify.com" nil])
+ (".spotify.com"
+  [url-cookie "sp_landing" "http%3A%2F%2Fopen.spotify.com%2Fartist%2F5qRXoCC1CDTMTli9gplUvk" "07-Jul-2016 14:18:01.00 GMT" "/" ".spotify.com" nil]
+  [url-cookie "Max-Age" "86400" "07-Jul-2016 14:18:01.00 GMT" "/" ".spotify.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

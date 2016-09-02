@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (22320 43773
+;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (22385 32392
 ;;;;;;  0 0))
 ;;; Generated autoloads from clj-refactor.el
 
@@ -116,42 +116,6 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-thread
 
 \(fn)" t nil)
 
-(autoload 'cljr-unwind "clj-refactor" "\
-Unwind thread at point or above point by one level.
-Return nil if there are no more levels to unwind.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-unwind
-
-\(fn)" t nil)
-
-(autoload 'cljr-unwind-all "clj-refactor" "\
-Fully unwind thread at point or above point.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-unwind-all
-
-\(fn)" t nil)
-
-(autoload 'cljr-thread "clj-refactor" "\
-Thread by one more level an existing threading macro.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-thread
-
-\(fn)" t nil)
-
-(autoload 'cljr-thread-first-all "clj-refactor" "\
-Fully thread the form at point using ->.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-thread-first-all
-
-\(fn BUT-LAST)" t nil)
-
-(autoload 'cljr-thread-last-all "clj-refactor" "\
-Fully thread the form at point using ->>.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-thread-last-all
-
-\(fn BUT-LAST)" t nil)
-
 (autoload 'cljr-introduce-let "clj-refactor" "\
 Create a let form, binding the form at point.
 The resulting let form can then be expanded with `\\[cljr-expand-let]'.
@@ -180,27 +144,6 @@ Keys to use in the destructuring are inferred from the code, and
 their usage is replaced with the new local variables.
 
 See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-destructure-keys
-
-\(fn)" t nil)
-
-(autoload 'cljr-cycle-privacy "clj-refactor" "\
-Make public the current private def, or vice-versa.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-privacy
-
-\(fn)" t nil)
-
-(autoload 'cljr-cycle-coll "clj-refactor" "\
-Convert the coll at (point) from (x) -> {x} -> [x] -> -> #{x} -> (x) recur
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-coll
-
-\(fn)" t nil)
-
-(autoload 'cljr-cycle-if "clj-refactor" "\
-Change a surrounding if to if-not, or vice-versa.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-if
 
 \(fn)" t nil)
 
@@ -387,7 +330,7 @@ A mode to keep the clj-refactor keybindings.
 
 ;;;***
 
-;;;### (autoloads nil nil ("clj-refactor-pkg.el") (22320 43773 789650
+;;;### (autoloads nil nil ("clj-refactor-pkg.el") (22385 32392 26436
 ;;;;;;  0))
 
 ;;;***
