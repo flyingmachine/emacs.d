@@ -32,6 +32,13 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+(defvar ido-cur-item nil)
+(defvar ido-default-item nil)
+(defvar ido-context-switch-command nil)
+(defvar ido-cur-list nil)
+(defvar predicate nil)
+(defvar inherit-input-method nil)
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
@@ -196,3 +203,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)

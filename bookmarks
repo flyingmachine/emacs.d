@@ -2,14 +2,19 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("bengal"
+(("mxgo"
+ (filename . "~/projects/web/mxgo/mxgo/config.rb")
+ (front-context-string . "###\n# Page optio")
+ (rear-context-string)
+ (position . 1))
+("bengal"
  (filename . "~/projects/web/reify/bengal/project.clj")
  (front-context-string . "(defproject beng")
  (rear-context-string)
  (position . 1)
  (annotation . ""))
 ("pantry"
- (filename . "~/projects/web/reify/pantry/project.clj")
+ (filename . "~/projects/web/reify/pantry/build.boot")
  (front-context-string . "(defproject reif")
  (rear-context-string)
  (position . 1))
