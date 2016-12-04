@@ -31,7 +31,7 @@
 (global-prettify-symbols-mode t)
 
 ;; Increase size for my poor eyes
-(set-face-attribute 'default nil :font "Fira Code-16")
+(set-face-attribute 'default nil :font "Fira Code-15")
 
 ;; Better scrolling
 (setq redisplay-dont-pause t

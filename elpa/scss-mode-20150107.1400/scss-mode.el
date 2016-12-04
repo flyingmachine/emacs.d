@@ -2,9 +2,9 @@
 ;;
 ;; Author: Anton Johansson <anton.johansson@gmail.com> - http://antonj.se
 ;; URL: https://github.com/antonj/scss-mode
+;; Package-Version: 20150107.1400
 ;; Created: Sep 1 23:11:26 2010
-;; Version: 20150107.1400
-;; X-Original-Version: 0.5.0
+;; Version: 0.5.0
 ;; Keywords: scss css mode
 ;;
 ;; This program is free software; you can redistribute it and/or
