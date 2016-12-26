@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("specmonstah"
+(("tech-roadmaps.org"
+ (filename . "~/Dropbox/org-life/learning/tech-roadmaps.org")
+ (front-context-string . "* org mode\n** Do")
+ (rear-context-string)
+ (position . 1))
+("specmonstah"
  (filename . "~/projects/web/specmonsta/build.boot")
  (front-context-string . "(set-env!\n  :sou")
  (rear-context-string)
