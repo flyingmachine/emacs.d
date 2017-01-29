@@ -31,12 +31,17 @@
                 (1 font-lock-keyword-face))
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
-
+            (put-clojure-indent 'reg-event-db 1)
+            (put-clojure-indent 'reg-event-fx 1)
+            (put-clojure-indent 'reg-fx 1)
+            (put-clojure-indent 'reg-cofx 1)
+            (put-clojure-indent 'reg-sub 1)
             (enable-paredit-mode)
             (subword-mode)))
 
-;(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
-;(add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
+
+;; (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
+;; (add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
 
 ;;;;
 ;; Cider
