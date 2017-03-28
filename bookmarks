@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("sweet-tooth-frontend"
+(("sweet-tooth-character-sheet-example"
+ (filename . "~/projects/web/sweet-tooth/character-sheet-example/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth-ansible"
+ (filename . "~/projects/web/sweet-tooth/clojure-uberjar-webapp/")
+ (front-context-string . "clojure-uberjar-")
+ (rear-context-string . "40 Jan 17 15:19 ")
+ (position . 267))
+("sweet-tooth-frontend"
  (filename . "~/projects/web/sweet-tooth/frontend/build.boot")
  (front-context-string . "(set-env!\n  :sou")
  (rear-context-string)
@@ -63,9 +73,19 @@
  (front-context-string . "(defproject trai")
  (rear-context-string)
  (position . 1))
+("capital-one-outline.org"
+ (filename . "~/Dropbox/org-life/projects/capital-one-outline.org")
+ (front-context-string . "* Course outline")
+ (rear-context-string)
+ (position . 1))
 ("doodles.org"
  (filename . "~/Dropbox/org-life/personal/doodles.org")
  (front-context-string . "* stuff I want t")
+ (rear-context-string)
+ (position . 1))
+("stack"
+ (filename . "~/projects/play/stack/build.boot")
+ (front-context-string . "(set-env!\n :sour")
  (rear-context-string)
  (position . 1))
 ("org-refile-last-stored"
@@ -97,4 +117,5 @@
  (filename . "~/Dropbox/org-life/projects.org")
  (front-context-string . "* Grateful Place")
  (rear-context-string)
- (position . 1)))
+ (position . 1))
+)
