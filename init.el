@@ -105,7 +105,7 @@
     helm-ag
     helm-git-grep
     helm-projectile
-    heml-descbinds))
+    helm-descbinds))
 
 ;; (dolist (p my-packages)
 ;;   (when (not (package-installed-p p))
