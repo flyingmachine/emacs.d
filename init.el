@@ -24,7 +24,7 @@
 ;; This also sets the load path.
 (package-initialize)
 (setq package-enable-at-startup nil)
-(require 'use-package)
+;; (require 'use-package)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
@@ -90,6 +90,9 @@
     ;; git integration
     magit
 
+    ;; https://github.com/bbatsov/crux
+    crux
+
     yaml-mode
     coffee-mode
     scss-mode
@@ -101,15 +104,19 @@
     aggressive-indent
     web-mode
     enh-ruby-mode
+    base16-theme
+    git-gutter
     helm
     helm-ag
     helm-git-grep
     helm-projectile
-    helm-descbinds))
+    helm-descbinds
+    yasnippet
+    use-package))
 
-;; (dolist (p my-packages)
-;;   (when (not (package-installed-p p))
-;;     (package-install p)))
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
 
 
 ;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able

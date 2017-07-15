@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "base16-theme" "base16-theme.el" (22890 11744
+;;;### (autoloads nil "base16-theme" "base16-theme.el" (22890 19002
 ;;;;;;  0 0))
 ;;; Generated autoloads from base16-theme.el
 
@@ -50,7 +50,7 @@
 ;;;;;;  "base16-tomorrow-night-theme.el" "base16-tomorrow-theme.el"
 ;;;;;;  "base16-tube-theme.el" "base16-twilight-theme.el" "base16-unikitty-dark-theme.el"
 ;;;;;;  "base16-unikitty-light-theme.el" "base16-woodland-theme.el")
-;;;;;;  (22890 11744 0 0))
+;;;;;;  (22890 19002 0 0))
 
 ;;;***
 
