@@ -36,6 +36,8 @@
             (put-clojure-indent 'reg-fx 1)
             (put-clojure-indent 'reg-cofx 1)
             (put-clojure-indent 'reg-sub 1)
+            (put-clojure-indent 'bind-relations 1)
+            (put-clojure-indent 'react-method 1)
             (enable-paredit-mode)
             (subword-mode)))
 

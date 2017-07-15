@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("sweet-tooth-character-sheet-example"
+(("daily-scratch.org"
+ (filename . "~/Dropbox/org-life/work/reify/daily-scratch.org")
+ (front-context-string . "* patient timeli")
+ (rear-context-string)
+ (position . 1))
+("blog"
+ (filename . "~/projects/web/blog/Rules")
+ (front-context-string . "#!/usr/bin/env r")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth-character-sheet-example"
  (filename . "~/projects/web/sweet-tooth/character-sheet-example/build.boot")
  (front-context-string . "(set-env!\n  :sou")
  (rear-context-string)

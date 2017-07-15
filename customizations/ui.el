@@ -52,8 +52,9 @@
 (add-to-list 'load-path "~/.emacs.d/themes")
 ;; (load-theme 'spacegray t)
 ;;(load-theme 'tomorrow-night-bright t)
-(require 'color-theme-sanityinc-tomorrow)
-;;(color-theme-sanityinc-tomorrow-bright)
+;; (require 'color-theme-sanityinc-tomorrow)
+;; (color-theme-sanityinc-tomorrow-bright)
+;; (load-theme 'oceanic t)
 
 
 ;; powerline customizes the mode line
