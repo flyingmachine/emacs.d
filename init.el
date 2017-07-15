@@ -97,7 +97,15 @@
     company
     ack-and-a-half
     ag
-    enh-ruby-mode))
+    adoc-mode
+    aggressive-indent
+    web-mode
+    enh-ruby-mode
+    helm
+    helm-ag
+    helm-git-grep
+    helm-projectile
+    heml-descbinds))
 
 ;; (dolist (p my-packages)
 ;;   (when (not (package-installed-p p))
