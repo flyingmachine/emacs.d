@@ -55,7 +55,7 @@
 ;; (require 'color-theme-sanityinc-tomorrow)
 ;; (color-theme-sanityinc-tomorrow-bright)
 ;; (load-theme 'oceanic t)
-
+(load-theme 'base16-oceanicnext t)
 
 ;; powerline customizes the mode line
 ;; (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
