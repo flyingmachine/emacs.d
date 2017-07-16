@@ -1,12 +1,17 @@
 ;; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
-(add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+;; (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
 (setq org-default-notes-file "~/Dropbox/org-life/notes.org")
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-indent-mode t)
+
+;; bullets
+(add-hook 'org-mode-hook 'org-bullets-mode)
+(setq org-bullets-bullet-list '("•"))
+
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Dropbox/org-life/projects.org" "Quick Tasks")
          "* TODO %?\n  %i\n  %a")
