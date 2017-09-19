@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("daily-scratch.org"
+(("personal-daily-scratch.org"
+ (filename . "~/Dropbox/org-life/projects/persona-daily-scratch.org")
+ (front-context-string)
+ (rear-context-string)
+ (position . 1))
+("daily-scratch.org"
  (filename . "~/Dropbox/org-life/work/reify/daily-scratch.org")
  (front-context-string . "* patient timeli")
  (rear-context-string)
