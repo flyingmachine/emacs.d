@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("personal-daily-scratch.org"
+(("puppy"
+ (filename . "~/Dropbox/org-life/puppy.org")
+ (front-context-string)
+ (rear-context-string)
+ (position . 1))
+("specmonstah"
+ (filename . "~/projects/web/reify/specmonstah/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("grateful-place"
+ (filename . "~/projects/web/grateful-place-3/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("open-source-2"
+ (filename . "~/projects/web/open-source-2/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("personal-daily-scratch.org"
  (filename . "~/Dropbox/org-life/projects/persona-daily-scratch.org")
  (front-context-string)
  (rear-context-string)
@@ -42,28 +62,18 @@
  (front-context-string . "(set-env!\n  :sou")
  (rear-context-string)
  (position . 1))
-("specmonstah"
- (filename . "~/projects/web/specmonsta/build.boot")
- (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("mxgo"
- (filename . "~/projects/web/mxgo/mxgo/config.rb")
- (front-context-string . "###\n# Page optio")
- (rear-context-string)
- (position . 1))
-("bengal"
+("reify/bengal"
  (filename . "~/projects/web/reify/bengal/project.clj")
  (front-context-string . "(defproject beng")
  (rear-context-string)
  (position . 1)
  (annotation . ""))
-("pantry"
+("reify/pantry"
  (filename . "~/projects/web/reify/pantry/build.boot")
  (front-context-string . "(defproject reif")
  (rear-context-string)
  (position . 1))
-("salk"
+("reify/salk"
  (filename . "~/projects/web/reify/salk/project.clj")
  (front-context-string . "(defproject salk")
  (rear-context-string)
@@ -73,11 +83,6 @@
  (front-context-string)
  (rear-context-string . "nect local-db)))")
  (position . 2852))
-("melange"
- (filename . "~/projects/web/melange/build.boot")
- (front-context-string . "(ns boot.user)\n\n")
- (rear-context-string)
- (position . 1))
 ("tech roadmaps"
  (filename . "~/Dropbox/org-life/learning/tech-roadmaps.org")
  (front-context-string . "* org mode\n** Do")
@@ -88,19 +93,9 @@
  (front-context-string . "(defproject trai")
  (rear-context-string)
  (position . 1))
-("capital-one-outline.org"
- (filename . "~/Dropbox/org-life/projects/capital-one-outline.org")
- (front-context-string . "* Course outline")
- (rear-context-string)
- (position . 1))
 ("doodles.org"
  (filename . "~/Dropbox/org-life/personal/doodles.org")
  (front-context-string . "* stuff I want t")
- (rear-context-string)
- (position . 1))
-("stack"
- (filename . "~/projects/play/stack/build.boot")
- (front-context-string . "(set-env!\n :sour")
  (rear-context-string)
  (position . 1))
 ("org-refile-last-stored"
@@ -108,11 +103,6 @@
  (front-context-string . "** subtree\na\n***")
  (rear-context-string . " woot\n**** test\n")
  (position . 232))
-("open-source"
- (filename . "~/projects/web/open-source/build.boot")
- (front-context-string . "(set-env!\n :sour")
- (rear-context-string)
- (position . 1))
 ("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")

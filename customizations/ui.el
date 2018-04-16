@@ -28,7 +28,7 @@
 ;; typography
 (setq-default line-spacing nil)
 (setq mac-allow-anti-aliasing t)
-(global-prettify-symbols-mode t)
+;; (global-prettify-symbols-mode t) ;; this causes alignment issues
 
 ;; Increase size for my poor eyes
 (set-face-attribute 'default nil :font "Fira Code-15")
@@ -55,7 +55,26 @@
 ;; (require 'color-theme-sanityinc-tomorrow)
 ;; (color-theme-sanityinc-tomorrow-bright)
 ;; (load-theme 'oceanic t)
-(load-theme 'base16-oceanicnext t)
+;; (load-theme 'base16-oceanicnext t)
+
+(require 'doom-themes)
+
+;; Global settings (defaults)
+(setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+      doom-themes-enable-italic t) ; if nil, italics is universally disabled
+
+;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
+;; may have their own settings.
+(load-theme 'doom-one t)
+
+;; Enable flashing mode-line on errors
+(doom-themes-visual-bell-config)
+
+;; Enable custom neotree theme
+;; (doom-themes-neotree-config)  ; all-the-icons fonts must be installed!
+
+;; Corrects (and improves) org-mode's native fontification.
+(doom-themes-org-config)
 
 ;; powerline customizes the mode line
 ;; (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
@@ -68,12 +87,8 @@
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
-(if (or (equal system-name "DH.local")
-        (equal system-name "waffles")) 
-    (setq initial-frame-alist '((top . 0) (left . 0)
-                                (width . 177) (height . 53)))
-  (setq initial-frame-alist '((top . 0) (left . 0)
-                              (width . 177) (height . 52))))
+(setq initial-frame-alist '((top . 0) (left . 0)
+                            (width . 185) (height . 56)))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard

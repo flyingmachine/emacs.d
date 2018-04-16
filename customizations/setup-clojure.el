@@ -25,12 +25,6 @@
 (add-hook 'clojure-mode-hook
           (lambda ()
             (setq inferior-lisp-program "lein repl")
-            (font-lock-add-keywords
-             nil
-             '(("(\\(facts?\\)"
-                (1 font-lock-keyword-face))
-               ("(\\(background?\\)"
-                (1 font-lock-keyword-face))))
             (put-clojure-indent 'reg-event-db 1)
             (put-clojure-indent 'reg-event-fx 1)
             (put-clojure-indent 'reg-fx 1)
@@ -38,9 +32,12 @@
             (put-clojure-indent 'reg-sub 1)
             (put-clojure-indent 'bind-relations 1)
             (put-clojure-indent 'react-method 1)
+            (put-clojure-indent 'render 1)
+            (put-clojure-indent 'componentDidMount 1)
+            (put-clojure-indent 'componentWillUnmount 1)
+            (put-clojure-indent 'componentDidUpdate 1)
             (enable-paredit-mode)
             (subword-mode)))
-
 
 ;; (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 ;; (add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
