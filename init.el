@@ -16,7 +16,7 @@
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
-(add-to-list 'package-pinned-packages '(clj-refactor . "melpa-stable") t)
+;; (add-to-list 'package-pinned-packages '(clj-refactor . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
 ;; (add-to-list 'package-pinned-packages '(helm-projectile . "melpa-stable") t)
 

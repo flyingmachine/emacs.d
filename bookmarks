@@ -18,8 +18,8 @@
  (rear-context-string)
  (position . 1))
 ("specmonstah"
- (filename . "~/projects/web/reify/specmonstah/build.boot")
- (front-context-string . "(set-env!\n  :sou")
+ (filename . "~/projects/web/reify/specmonstah/src/reifyhealth/specmonstah/core.cljc")
+ (front-context-string . "(ns reifyhealth.")
  (rear-context-string)
  (position . 1))
 ("grateful-place"

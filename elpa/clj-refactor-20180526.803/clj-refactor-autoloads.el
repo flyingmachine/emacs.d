@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (22898 21655
-;;;;;;  0 0))
+;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (23342 28559
+;;;;;;  853432 419000))
 ;;; Generated autoloads from clj-refactor.el
 
 (autoload 'cljr-add-keybindings-with-prefix "clj-refactor" "\
@@ -198,7 +198,7 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-project-depe
 (autoload 'cljr-update-project-dependency "clj-refactor" "\
 Update the version of the dependency at point.
 
-\(fn)" t nil)
+\(fn &optional VERSION)" t nil)
 
 (autoload 'cljr-update-project-dependencies "clj-refactor" "\
 Update all project dependencies.
@@ -315,6 +315,11 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-change-function-
 
 \(fn)" t nil)
 
+(autoload 'cljr--inject-middleware-p "clj-refactor" "\
+Return non-nil if nREPL middleware should be injected.
+
+\(fn &rest _)" nil nil)
+
 (autoload 'cljr--inject-jack-in-dependencies "clj-refactor" "\
 Inject the REPL dependencies of clj-refactor at `cider-jack-in'.
 If injecting the dependencies is not preferred set `cljr-inject-dependencies-at-jack-in' to nil.
@@ -333,7 +338,7 @@ A mode to keep the clj-refactor keybindings.
 ;;;***
 
 ;;;### (autoloads nil nil ("clj-refactor-compat.el" "clj-refactor-pkg.el")
-;;;;;;  (22898 21655 0 0))
+;;;;;;  (23342 28559 855282 364000))
 
 ;;;***
 
