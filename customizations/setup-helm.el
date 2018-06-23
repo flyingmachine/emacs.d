@@ -15,8 +15,8 @@
 (use-package helm-adaptive
     :config (helm-adaptive-mode 1))
 
-(use-package helm-ring
-    :config (helm-push-mark-mode 1))
+;; (use-package helm-ring
+;;   :config (helm-push-mark-mode 1))
 
 (use-package helm-utils
     ;; Popup buffer-name or filename in grep/moccur/imenu-all etc...

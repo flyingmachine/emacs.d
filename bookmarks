@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("puppy"
+(("reify/salk-mobile"
+ (filename . "~/projects/web/reify/salk-mobile/project.clj")
+ (front-context-string . "(defproject salk")
+ (rear-context-string)
+ (position . 1))
+("reify/docs"
+ (filename . "~/projects/web/reify/Docs/README.md")
+ (front-context-string . "## Docs\n\nThis is")
+ (rear-context-string)
+ (position . 1))
+("puppy"
  (filename . "~/Dropbox/org-life/puppy.org")
  (front-context-string)
  (rear-context-string)

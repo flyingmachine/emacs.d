@@ -17,7 +17,7 @@
   (scroll-bar-mode -1))
 
 (if (boundp 'fringe-mode)
-  (fringe-mode '(4 . 0)))
+    (fringe-mode '(4 . 0)))
 (global-git-gutter-mode +1)
 
 ;; Configure the mode line
