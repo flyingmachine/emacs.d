@@ -65,7 +65,9 @@
 
 ;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
 ;; may have their own settings.
-(load-theme 'doom-one t)
+(load-theme 'doom-tomorrow-night t)
+;; (load-theme 'atom-one-dark t)
+;; (load-theme 'monokai t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)

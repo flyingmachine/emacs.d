@@ -2,14 +2,14 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("reify/salk-mobile"
- (filename . "~/projects/web/reify/salk-mobile/project.clj")
- (front-context-string . "(defproject salk")
+(("personal-daily-scratch"
+ (filename . "~/Dropbox/org-life/projects/personal-daily-scratch.org")
+ (front-context-string . "* sweet tooth re")
  (rear-context-string)
  (position . 1))
-("reify/docs"
- (filename . "~/projects/web/reify/Docs/README.md")
- (front-context-string . "## Docs\n\nThis is")
+("daily-scratch.org"
+ (filename . "~/Dropbox/org-life/apple/daily-scratch.org")
+ (front-context-string . "* refamiliarize ")
  (rear-context-string)
  (position . 1))
 ("puppy"
@@ -18,7 +18,7 @@
  (rear-context-string)
  (position . 1))
 ("specmonstah"
- (filename . "~/projects/web/reify/specmonstah/src/reifyhealth/specmonstah/core.cljc")
+ (filename . "~/projects/web/specmonstah/src/reifyhealth/specmonstah/core.cljc")
  (front-context-string . "(ns reifyhealth.")
  (rear-context-string)
  (position . 1))
@@ -35,11 +35,6 @@
 ("personal-daily-scratch.org"
  (filename . "~/Dropbox/org-life/projects/persona-daily-scratch.org")
  (front-context-string)
- (rear-context-string)
- (position . 1))
-("daily-scratch.org"
- (filename . "~/Dropbox/org-life/work/reify/daily-scratch.org")
- (front-context-string . "* patient timeli")
  (rear-context-string)
  (position . 1))
 ("blog"
@@ -70,22 +65,6 @@
 ("sweet-tooth-endpoint"
  (filename . "~/projects/web/sweet-tooth/endpoint/build.boot")
  (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("reify/bengal"
- (filename . "~/projects/web/reify/bengal/project.clj")
- (front-context-string . "(defproject beng")
- (rear-context-string)
- (position . 1)
- (annotation . ""))
-("reify/pantry"
- (filename . "~/projects/web/reify/pantry/build.boot")
- (front-context-string . "(defproject reif")
- (rear-context-string)
- (position . 1))
-("reify/salk"
- (filename . "~/projects/web/reify/salk/project.clj")
- (front-context-string . "(defproject salk")
  (rear-context-string)
  (position . 1))
 ("constant awesome"

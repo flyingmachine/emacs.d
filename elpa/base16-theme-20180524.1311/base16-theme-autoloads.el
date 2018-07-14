@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "base16-theme" "base16-theme.el" (23342 24053
-;;;;;;  981530 59000))
+;;;### (autoloads nil "base16-theme" "base16-theme.el" (23369 30824
+;;;;;;  844169 621000))
 ;;; Generated autoloads from base16-theme.el
 
 (and load-file-name (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
@@ -61,8 +61,8 @@
 ;;;;;;  "base16-theme-pkg.el" "base16-tomorrow-night-theme.el" "base16-tomorrow-theme.el"
 ;;;;;;  "base16-tube-theme.el" "base16-twilight-theme.el" "base16-unikitty-dark-theme.el"
 ;;;;;;  "base16-unikitty-light-theme.el" "base16-woodland-theme.el"
-;;;;;;  "base16-xcode-dusk-theme.el" "base16-zenburn-theme.el") (23342
-;;;;;;  24054 182275 136000))
+;;;;;;  "base16-xcode-dusk-theme.el" "base16-zenburn-theme.el") (23369
+;;;;;;  30825 49531 639000))
 
 ;;;***
 
