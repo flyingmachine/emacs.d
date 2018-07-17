@@ -22,8 +22,12 @@
 
 ;; Configure the mode line
 (setq-default mode-line-format
-              '((:eval (propertize " %b" 'face 'mode-line-highlight))
-                " %l:%c %p %m"))
+              '((:eval (propertize " %b " 'face
+                                   (if (buffer-modified-p)
+                                       '(:background "grey" :foreground "black" :weight bold)
+                                     'mode-line-highlight)))
+                " %l:%c %p %m"
+                (:propertize (vc-mode vc-mode) face (:weight normal))))
 
 ;; typography
 (setq-default line-spacing nil)
@@ -126,3 +130,6 @@
 
 ;; open files in existing frame
 (setq ns-pop-up-frames nil)
+
+(hl-line-mode t)
+(set-face-attribute 'hl-line nil :inherit nil :background "gray6")
