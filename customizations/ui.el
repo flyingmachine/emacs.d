@@ -35,7 +35,7 @@
 ;; (global-prettify-symbols-mode t) ;; this causes alignment issues
 
 ;; Increase size for my poor eyes
-(set-face-attribute 'default nil :font "Fira Code-15")
+(set-face-attribute 'default nil :font "Fira Code-17")
 
 ;; Better scrolling
 (setq redisplay-dont-pause t

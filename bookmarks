@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("personal-daily-scratch"
+(("emacs"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . ";;;;\n;; Packages")
+ (rear-context-string)
+ (position . 1))
+("personal-daily-scratch"
  (filename . "~/Dropbox/org-life/projects/personal-daily-scratch.org")
  (front-context-string . "* sweet tooth re")
  (rear-context-string)

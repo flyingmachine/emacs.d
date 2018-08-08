@@ -30,6 +30,7 @@
             (put-clojure-indent 'reg-fx 1)
             (put-clojure-indent 'reg-cofx 1)
             (put-clojure-indent 'reg-sub 1)
+            (put-clojure-indent 'rr 2)
             (put-clojure-indent 'bind-relations 1)
             (put-clojure-indent 'react-method 1)
             (put-clojure-indent 'render 1)
