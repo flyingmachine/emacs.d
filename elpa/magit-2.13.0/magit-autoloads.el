@@ -1,10 +1,12 @@
 ;;; magit-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "git-rebase" "git-rebase.el" (23342 24017 317838
-;;;;;;  711000))
+;;;### (autoloads nil "git-rebase" "git-rebase.el" (0 0 0 0))
 ;;; Generated autoloads from git-rebase.el
 
 (autoload 'git-rebase-mode "git-rebase" "\
@@ -21,12 +23,14 @@ running 'man git-rebase' at the command line) for details.
 
 (add-to-list 'auto-mode-alist (cons git-rebase-filename-regexp 'git-rebase-mode))
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-rebase" '("git-rebase-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit" "magit.el" (23342 24017 354809 355000))
+;;;### (autoloads nil "magit" "magit.el" (0 0 0 0))
 ;;; Generated autoloads from magit.el
-(autoload 'magit-dispatch-popup "magit" nil t)
-(autoload 'magit-run-popup "magit" nil t)
+ (autoload 'magit-dispatch-popup "magit" nil t)
+ (autoload 'magit-run-popup "magit" nil t)
 
 (autoload 'magit-git-command "magit" "\
 Execute COMMAND asynchronously; display output.
@@ -76,10 +80,11 @@ and Emacs to it.
 
 \(fn &optional PRINT-DEST)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-apply" "magit-apply.el" (23342 24017
-;;;;;;  328138 293000))
+;;;### (autoloads nil "magit-apply" "magit-apply.el" (0 0 0 0))
 ;;; Generated autoloads from magit-apply.el
 
 (autoload 'magit-stage-file "magit-apply" "\
@@ -112,10 +117,12 @@ Remove all changes from the staging area.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-apply" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-autorevert" "magit-autorevert.el" (23342
-;;;;;;  24017 305982 184000))
+;;;### (autoloads nil "magit-autorevert" "magit-autorevert.el" (0
+;;;;;;  0 0 0))
 ;;; Generated autoloads from magit-autorevert.el
 
 (defvar magit-revert-buffers t)
@@ -142,10 +149,11 @@ See `auto-revert-mode' for more information on Auto-Revert mode.
 
 \(fn &optional ARG)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-autorevert" '("auto-revert-buffer" "magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-bisect" "magit-bisect.el" (23342 24017
-;;;;;;  326749 348000))
+;;;### (autoloads nil "magit-bisect" "magit-bisect.el" (0 0 0 0))
 ;;; Generated autoloads from magit-bisect.el
  (autoload 'magit-bisect-popup "magit-bisect" nil t)
 
@@ -194,10 +202,11 @@ bisect run'.
 
 \(fn CMDLINE &optional BAD GOOD)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-bisect" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-blame" "magit-blame.el" (23342 24017
-;;;;;;  351774 899000))
+;;;### (autoloads nil "magit-blame" "magit-blame.el" (0 0 0 0))
 ;;; Generated autoloads from magit-blame.el
 
 (autoload 'magit-blame-echo "magit-blame" "\
@@ -224,10 +233,12 @@ For each line show the last revision in which it still exists.
 \(fn)" t nil)
  (autoload 'magit-blame-popup "magit-blame" nil t)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-blame" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-bookmark" "magit-bookmark.el" (23342
-;;;;;;  24017 320729 193000))
+;;;### (autoloads nil "magit-bookmark" "magit-bookmark.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from magit-bookmark.el
 
 (autoload 'magit-bookmark--status-jump "magit-bookmark" "\
@@ -330,10 +341,11 @@ Create a Magit submodule list bookmark.
 
 \(fn)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-bookmark" '("magit-bookmark--")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-branch" "magit-branch.el" (23342 24017
-;;;;;;  325308 151000))
+;;;### (autoloads nil "magit-branch" "magit-branch.el" (0 0 0 0))
 ;;; Generated autoloads from magit-branch.el
  (autoload 'magit-branch-popup "magit" nil t)
 
@@ -623,10 +635,11 @@ When `never' (the default) then the variable is never set.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-branch" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-collab" "magit-collab.el" (23342 24017
-;;;;;;  346025 822000))
+;;;### (autoloads nil "magit-collab" "magit-collab.el" (0 0 0 0))
 ;;; Generated autoloads from magit-collab.el
 
 (autoload 'magit-browse-pull-request "magit-collab" "\
@@ -637,10 +650,11 @@ be lifted eventually to support other Git forges.
 
 \(fn PR)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-collab" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-commit" "magit-commit.el" (23342 24017
-;;;;;;  307643 605000))
+;;;### (autoloads nil "magit-commit" "magit-commit.el" (0 0 0 0))
 ;;; Generated autoloads from magit-commit.el
 
 (autoload 'magit-commit "magit-commit" "\
@@ -731,10 +745,11 @@ history element.
 
 \(fn DATE)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-commit" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-diff" "magit-diff.el" (23342 24017 350296
-;;;;;;  369000))
+;;;### (autoloads nil "magit-diff" "magit-diff.el" (0 0 0 0))
 ;;; Generated autoloads from magit-diff.el
 
 (autoload 'magit-diff-popup "magit-diff" "\
@@ -821,10 +836,11 @@ for a revision.
 
 \(fn REV &optional ARGS FILES MODULE)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-diff" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-ediff" "magit-ediff.el" (23342 24017
-;;;;;;  341326 619000))
+;;;### (autoloads nil "magit-ediff" "magit-ediff.el" (0 0 0 0))
 ;;; Generated autoloads from magit-ediff.el
  (autoload 'magit-ediff-popup "magit-ediff" nil t)
 
@@ -910,10 +926,11 @@ stash that were staged.
 
 \(fn STASH)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-ediff" '("magit-ediff-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-extras" "magit-extras.el" (23342 24017
-;;;;;;  309052 834000))
+;;;### (autoloads nil "magit-extras" "magit-extras.el" (0 0 0 0))
 ;;; Generated autoloads from magit-extras.el
 
 (autoload 'magit-run-git-gui "magit-extras" "\
@@ -1122,10 +1139,11 @@ patch application, a cherry-pick, a revert, or a bisect.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-extras" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-files" "magit-files.el" (23342 24017
-;;;;;;  319268 632000))
+;;;### (autoloads nil "magit-files" "magit-files.el" (0 0 0 0))
 ;;; Generated autoloads from magit-files.el
 
 (autoload 'magit-find-file "magit-files" "\
@@ -1170,10 +1188,18 @@ Checkout FILE from REV.
 
 \(fn REV FILE)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-files" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-imenu" "magit-imenu.el" (23342 24017
-;;;;;;  339573 521000))
+;;;### (autoloads nil "magit-git" "magit-git.el" (0 0 0 0))
+;;; Generated autoloads from magit-git.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-git" '("magit-")))
+
+;;;***
+
+;;;### (autoloads nil "magit-imenu" "magit-imenu.el" (0 0 0 0))
 ;;; Generated autoloads from magit-imenu.el
 
 (autoload 'magit-imenu--log-prev-index-position-function "magit-imenu" "\
@@ -1287,10 +1313,11 @@ beginning of the line.
 
 \(fn)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-imenu" '("magit-imenu--index-function")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-log" "magit-log.el" (23342 24017 342972
-;;;;;;  780000))
+;;;### (autoloads nil "magit-log" "magit-log.el" (0 0 0 0))
 ;;; Generated autoloads from magit-log.el
 
 (autoload 'magit-log-buffer-file-popup "magit-log" "\
@@ -1376,10 +1403,18 @@ Show commits in a branch that are not merged in the upstream branch.
 
 \(fn HEAD UPSTREAM)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-log" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-merge" "magit-merge.el" (23342 24017
-;;;;;;  336376 244000))
+;;;### (autoloads nil "magit-margin" "magit-margin.el" (0 0 0 0))
+;;; Generated autoloads from magit-margin.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-margin" '("magit-")))
+
+;;;***
+
+;;;### (autoloads nil "magit-merge" "magit-merge.el" (0 0 0 0))
 ;;; Generated autoloads from magit-merge.el
  (autoload 'magit-merge-popup "magit" nil t)
 
@@ -1457,17 +1492,33 @@ Abort the current merge operation.
 
 \(fn)" t nil)
 
-;;;***
-
-;;;### (autoloads nil "magit-notes" "magit-notes.el" (23342 24017
-;;;;;;  366459 701000))
-;;; Generated autoloads from magit-notes.el
- (autoload 'magit-notes-popup "magit" nil t)
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-merge" '("magit-")))
 
 ;;;***
 
-;;;### (autoloads nil "magit-refs" "magit-refs.el" (23342 24017 310686
-;;;;;;  662000))
+;;;### (autoloads nil "magit-mode" "magit-mode.el" (0 0 0 0))
+;;; Generated autoloads from magit-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-mode" '("magit-" "disable-magit-save-buffers" "inhibit-magit-refresh")))
+
+;;;***
+
+;;;### (autoloads nil "magit-notes" "magit-notes.el" (0 0 0 0))
+;;; Generated autoloads from magit-notes.el
+ (autoload 'magit-notes-popup "magit" nil t)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-notes" '("magit-")))
+
+;;;***
+
+;;;### (autoloads nil "magit-process" "magit-process.el" (0 0 0 0))
+;;; Generated autoloads from magit-process.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-process" '("magit-" "tramp-sh-handle-")))
+
+;;;***
+
+;;;### (autoloads nil "magit-refs" "magit-refs.el" (0 0 0 0))
 ;;; Generated autoloads from magit-refs.el
 
 (autoload 'magit-show-refs-popup "magit-refs" "\
@@ -1494,10 +1545,11 @@ Refs are compared with a branch read from the user.
 
 \(fn &optional REF ARGS)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-refs" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-remote" "magit-remote.el" (23342 24017
-;;;;;;  360490 20000))
+;;;### (autoloads nil "magit-remote" "magit-remote.el" (0 0 0 0))
 ;;; Generated autoloads from magit-remote.el
 
 (autoload 'magit-clone "magit-remote" "\
@@ -1758,10 +1810,11 @@ is asked to pull.  START has to be reachable from that commit.
 
 \(fn URL START END)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-remote" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-repos" "magit-repos.el" (23342 24017
-;;;;;;  348844 171000))
+;;;### (autoloads nil "magit-repos" "magit-repos.el" (0 0 0 0))
 ;;; Generated autoloads from magit-repos.el
 
 (autoload 'magit-list-repositories "magit-repos" "\
@@ -1773,10 +1826,11 @@ control which repositories are displayed.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-repos" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-reset" "magit-reset.el" (23342 24017
-;;;;;;  347437 534000))
+;;;### (autoloads nil "magit-reset" "magit-reset.el" (0 0 0 0))
 ;;; Generated autoloads from magit-reset.el
  (autoload 'magit-reset-popup "magit" nil t)
 
@@ -1818,10 +1872,19 @@ Reset the head, index, and working tree to COMMIT.
 
 \(fn COMMIT)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-reset" '("magit-reset-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-sequence" "magit-sequence.el" (23342
-;;;;;;  24017 357624 899000))
+;;;### (autoloads nil "magit-section" "magit-section.el" (0 0 0 0))
+;;; Generated autoloads from magit-section.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-section" '("magit-")))
+
+;;;***
+
+;;;### (autoloads nil "magit-sequence" "magit-sequence.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from magit-sequence.el
 
 (autoload 'magit-sequencer-continue "magit-sequence" "\
@@ -2006,10 +2069,11 @@ Abort the current rebase operation, restoring the original branch.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-sequence" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-stash" "magit-stash.el" (23342 24017
-;;;;;;  334989 566000))
+;;;### (autoloads nil "magit-stash" "magit-stash.el" (0 0 0 0))
 ;;; Generated autoloads from magit-stash.el
  (autoload 'magit-stash-popup "magit-stash" nil t)
 
@@ -2113,10 +2177,11 @@ Show all diffs of a stash in a buffer.
 
 \(fn STASH &optional ARGS FILES)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-stash" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-status" "magit-status.el" (23342 24017
-;;;;;;  344517 919000))
+;;;### (autoloads nil "magit-status" "magit-status.el" (0 0 0 0))
 ;;; Generated autoloads from magit-status.el
 
 (autoload 'magit-init "magit-status" "\
@@ -2145,10 +2210,12 @@ then offer to initialize it as a new repository.
 
 \(fn DIRECTORY)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-status" '("magit")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-submodule" "magit-submodule.el" (23342
-;;;;;;  24017 367992 338000))
+;;;### (autoloads nil "magit-submodule" "magit-submodule.el" (0 0
+;;;;;;  0 0))
 ;;; Generated autoloads from magit-submodule.el
  (autoload 'magit-submodule-popup "magit-submodule" nil t)
 
@@ -2261,10 +2328,11 @@ Display a list of the current repository's submodules.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-submodule" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-subtree" "magit-subtree.el" (23342 24017
-;;;;;;  322274 951000))
+;;;### (autoloads nil "magit-subtree" "magit-subtree.el" (0 0 0 0))
 ;;; Generated autoloads from magit-subtree.el
  (autoload 'magit-subtree-popup "magit-subtree" nil t)
 
@@ -2298,10 +2366,11 @@ Extract the history of the subtree PREFIX.
 
 \(fn PREFIX COMMIT ARGS)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-subtree" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-tag" "magit-tag.el" (23342 24017 333503
-;;;;;;  903000))
+;;;### (autoloads nil "magit-tag" "magit-tag.el" (0 0 0 0))
 ;;; Generated autoloads from magit-tag.el
  (autoload 'magit-tag-popup "magit" nil t)
 
@@ -2345,8 +2414,7 @@ the tag popup by default.
 
 ;;;***
 
-;;;### (autoloads nil "magit-utils" "magit-utils.el" (23342 24017
-;;;;;;  304496 77000))
+;;;### (autoloads nil "magit-utils" "magit-utils.el" (0 0 0 0))
 ;;; Generated autoloads from magit-utils.el
 
 (autoload 'magit-emacs-Q-command "magit-utils" "\
@@ -2369,10 +2437,11 @@ See info node `(magit)Debugging Tools' for more information.
 
 (advice-add 'org-man-export :around 'org-man-export--magit-gitman)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-utils" '("magit-" "whitespace-dont-turn-on-in-magit-mode")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-wip" "magit-wip.el" (23342 24017 313509
-;;;;;;  749000))
+;;;### (autoloads nil "magit-wip" "magit-wip.el" (0 0 0 0))
 ;;; Generated autoloads from magit-wip.el
 
 (defvar magit-wip-after-save-mode nil "\
@@ -2438,10 +2507,12 @@ command which is about to be called are committed.
 
 \(fn &optional ARG)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-wip" '("magit-wip-")))
+
 ;;;***
 
-;;;### (autoloads nil "magit-worktree" "magit-worktree.el" (23342
-;;;;;;  24017 363518 771000))
+;;;### (autoloads nil "magit-worktree" "magit-worktree.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from magit-worktree.el
  (autoload 'magit-worktree-popup "magit-worktree" nil t)
 
@@ -2455,11 +2526,12 @@ Create a new BRANCH and check it out in a new worktree at PATH.
 
 \(fn PATH BRANCH START-POINT &optional FORCE)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "magit-worktree" '("magit-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("magit-core.el" "magit-git.el" "magit-margin.el"
-;;;;;;  "magit-mode.el" "magit-obsolete.el" "magit-pkg.el" "magit-process.el"
-;;;;;;  "magit-section.el") (23342 24017 362005 567000))
+;;;### (autoloads nil nil ("magit-core.el" "magit-obsolete.el" "magit-pkg.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -2467,5 +2539,6 @@ Create a new BRANCH and check it out in a new worktree at PATH.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; magit-autoloads.el ends here

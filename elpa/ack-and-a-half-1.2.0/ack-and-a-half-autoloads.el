@@ -1,10 +1,13 @@
 ;;; ack-and-a-half-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "ack-and-a-half" "ack-and-a-half.el" (22890
-;;;;;;  18915 0 0))
+;;;### (autoloads nil "ack-and-a-half" "ack-and-a-half.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from ack-and-a-half.el
 
 (autoload 'ack-and-a-half "ack-and-a-half" "\
@@ -45,11 +48,14 @@ Prompt to find a file found by ack in DIRECTORY.
 
 \(fn &optional DIRECTORY)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ack-and-a-half" '("ack-")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; ack-and-a-half-autoloads.el ends here

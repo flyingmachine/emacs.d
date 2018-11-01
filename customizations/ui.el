@@ -26,7 +26,7 @@
                                    (if (buffer-modified-p)
                                        '(:background "grey" :foreground "black" :weight bold)
                                      'mode-line-highlight)))
-                " %l:%c %p %m"
+                " %l:%c %p %m "
                 (:propertize (vc-mode vc-mode) face (:weight normal))))
 
 ;; typography
@@ -35,7 +35,7 @@
 ;; (global-prettify-symbols-mode t) ;; this causes alignment issues
 
 ;; Increase size for my poor eyes
-(set-face-attribute 'default nil :font "Fira Code-17")
+(set-face-attribute 'default nil :font "Fira Code-14")
 
 ;; Better scrolling
 (setq redisplay-dont-pause t
@@ -55,7 +55,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 ;; (load-theme 'spacegray t)
-;;(load-theme 'tomorrow-night-bright t)
+;; (load-theme 'tomorrow-night-bright t)
 ;; (require 'color-theme-sanityinc-tomorrow)
 ;; (color-theme-sanityinc-tomorrow-bright)
 ;; (load-theme 'oceanic t)
@@ -70,8 +70,6 @@
 ;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
 ;; may have their own settings.
 (load-theme 'doom-tomorrow-night t)
-;; (load-theme 'atom-one-dark t)
-;; (load-theme 'monokai t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)
@@ -131,5 +129,63 @@
 ;; open files in existing frame
 (setq ns-pop-up-frames nil)
 
-(hl-line-mode t)
-(set-face-attribute 'hl-line nil :inherit nil :background "gray6")
+;; toggle window split
+(defun toggle-window-split ()
+  (interactive)
+  (if (= (count-windows) 2)
+      (let* ((this-win-buffer (window-buffer))
+             (next-win-buffer (window-buffer (next-window)))
+             (this-win-edges (window-edges (selected-window)))
+             (next-win-edges (window-edges (next-window)))
+             (this-win-2nd (not (and (<= (car this-win-edges)
+                                         (car next-win-edges))
+                                     (<= (cadr this-win-edges)
+                                         (cadr next-win-edges)))))
+             (splitter
+              (if (= (car this-win-edges)
+                     (car (window-edges (next-window))))
+                  'split-window-horizontally
+                'split-window-vertically)))
+        (delete-other-windows)
+        (let ((first-win (selected-window)))
+          (funcall splitter)
+          (if this-win-2nd (other-window 1))
+          (set-window-buffer (selected-window) this-win-buffer)
+          (set-window-buffer (next-window) next-win-buffer)
+          (select-window first-win)
+          (if this-win-2nd (other-window 1))))))
+
+(global-set-key (kbd "C-x |") 'toggle-window-split)
+
+
+;; do not split window
+(setq split-width-threshold (- (window-width) 10))
+(setq split-height-threshold nil)
+
+(defun count-visible-buffers (&optional frame)
+  "Count how many buffers are currently being shown. Defaults to selected frame."
+  (length (mapcar #'window-buffer (window-list frame))))
+
+(defun do-not-split-more-than-two-windows (window &optional horizontal)
+  (if (and horizontal (> (count-visible-buffers) 1))
+      nil
+    t))
+
+(advice-add 'window-splittable-p :before-while #'do-not-split-more-than-two-windows)
+
+;; git fringe
+(require 'git-gutter-fringe)
+;; places the git gutter outside the margins.
+(setq-default fringes-outside-margins t)
+;; thin fringe bitmaps
+(fringe-helper-define 'git-gutter-fr:added '(center repeated)
+                      "XXX.....")
+(fringe-helper-define 'git-gutter-fr:modified '(center repeated)
+                      "XXX.....")
+(fringe-helper-define 'git-gutter-fr:deleted 'bottom
+  "X......."
+  "XX......"
+  "XXX....."
+  "XXXX....")
+
+(global-display-line-numbers-mode)

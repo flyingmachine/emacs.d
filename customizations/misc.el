@@ -10,12 +10,3 @@
 
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
-
-;; multiple cursors
-(global-set-key (kbd "C-s-c C-s-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-
-;;
-(global-set-key (kbd "C-x C-k") 'paredit-copy-as-kill)

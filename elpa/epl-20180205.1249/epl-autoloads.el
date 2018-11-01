@@ -1,9 +1,15 @@
 ;;; epl-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil nil ("epl.el") (23342 24030 747300 272000))
+;;;### (autoloads nil "epl" "epl.el" (0 0 0 0))
+;;; Generated autoloads from epl.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "epl" '("epl-")))
 
 ;;;***
 
@@ -11,5 +17,6 @@
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; epl-autoloads.el ends here

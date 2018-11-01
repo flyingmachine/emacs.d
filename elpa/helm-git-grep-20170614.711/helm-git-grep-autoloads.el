@@ -1,10 +1,12 @@
 ;;; helm-git-grep-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "helm-git-grep" "helm-git-grep.el" (22890 18920
-;;;;;;  0 0))
+;;;### (autoloads nil "helm-git-grep" "helm-git-grep.el" (0 0 0 0))
 ;;; Generated autoloads from helm-git-grep.el
 
 (autoload 'helm-git-grep-ls-files-limited-by-pathspec "helm-git-grep" "\
@@ -50,11 +52,14 @@ Obsolete.
 
 (make-obsolete 'helm-git-grep-with-exclude-file-pattern helm-git-grep-with-exclude-file-pattern-obsolete-message "0.10.0")
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-git-grep" '("helm-git-grep-")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; helm-git-grep-autoloads.el ends here

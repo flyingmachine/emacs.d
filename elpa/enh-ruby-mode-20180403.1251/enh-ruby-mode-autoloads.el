@@ -1,10 +1,12 @@
 ;;; enh-ruby-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "enh-ruby-mode" "enh-ruby-mode.el" (23342 24031
-;;;;;;  167103 216000))
+;;;### (autoloads nil "enh-ruby-mode" "enh-ruby-mode.el" (0 0 0 0))
 ;;; Generated autoloads from enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "enh-ruby-mode" "\
@@ -14,10 +16,11 @@ Enhanced Major mode for editing Ruby code.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "enh-ruby-mode" '("enh-ruby-" "erm-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("enh-ruby-mode-pkg.el") (23342 24031 164871
-;;;;;;  647000))
+;;;### (autoloads nil nil ("enh-ruby-mode-pkg.el") (0 0 0 0))
 
 ;;;***
 
@@ -25,5 +28,6 @@ Enhanced Major mode for editing Ruby code.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; enh-ruby-mode-autoloads.el ends here

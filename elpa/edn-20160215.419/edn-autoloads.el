@@ -1,9 +1,12 @@
 ;;; edn-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "edn" "edn.el" (22891 36705 0 0))
+;;;### (autoloads nil "edn" "edn.el" (0 0 0 0))
 ;;; Generated autoloads from edn.el
 
 (autoload 'edn-time-to-inst "edn" "\
@@ -81,11 +84,14 @@ your own tagged data.
 
 \(fn DATUM)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "edn" '("edn--" "hash-table-")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; edn-autoloads.el ends here

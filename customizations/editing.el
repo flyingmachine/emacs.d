@@ -77,5 +77,8 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; avy
+(global-set-key (kbd "C-.") 'avy-goto-char)
+
 ;; crux
 (require 'crux)

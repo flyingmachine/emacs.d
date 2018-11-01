@@ -30,13 +30,18 @@
             (put-clojure-indent 'reg-fx 1)
             (put-clojure-indent 'reg-cofx 1)
             (put-clojure-indent 'reg-sub 1)
-            (put-clojure-indent 'rr 2)
             (put-clojure-indent 'bind-relations 1)
             (put-clojure-indent 'react-method 1)
             (put-clojure-indent 'render 1)
             (put-clojure-indent 'componentDidMount 1)
             (put-clojure-indent 'componentWillUnmount 1)
             (put-clojure-indent 'componentDidUpdate 1)
+
+            (put-clojure-indent 'POST 2)
+            (put-clojure-indent 'GET 2)
+            (put-clojure-indent 'PATCH 2)
+            (put-clojure-indent 'checking 2)
+            
             (enable-paredit-mode)
             (subword-mode)))
 
@@ -48,12 +53,16 @@
 ;;;;
 
 ;; provides minibuffer documentation for the code you're typing into the repl
-(add-hook 'cider-mode-hook 'eldoc-mode)
-(add-hook 'cider-repl-mode-hook 'eldoc-mode)
+(add-hook 'cider-mode-hook #'eldoc-mode)
+(add-hook 'cider-repl-mode-hook #'eldoc-mode)
+(add-hook 'cider-repl-mode-hook (lambda ()
+                                  (aggressive-indent-mode nil)
+                                  (aggressive-indent-mode 'toggle)))
+(setq cider-dynamic-indentation nil)
 
 ;; autocomplete
-(add-hook 'cider-repl-mode-hook #'company-mode)
 (add-hook 'cider-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'company-mode)
 
 ;; ac-cider
 ;; (require 'ac-cider)

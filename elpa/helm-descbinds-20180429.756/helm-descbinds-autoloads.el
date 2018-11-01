@@ -1,10 +1,13 @@
 ;;; helm-descbinds-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "helm-descbinds" "helm-descbinds.el" (23342
-;;;;;;  24020 822612 144000))
+;;;### (autoloads nil "helm-descbinds" "helm-descbinds.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from helm-descbinds.el
 
 (defvar helm-descbinds-mode nil "\
@@ -55,11 +58,14 @@ useful, yet they are listed for completeness.
 
 \(fn &optional PREFIX BUFFER)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-descbinds" '("helm-descbind")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; helm-descbinds-autoloads.el ends here
