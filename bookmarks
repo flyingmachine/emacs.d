@@ -1,4 +1,4 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
@@ -35,11 +35,6 @@
 ("open-source-2"
  (filename . "~/projects/web/open-source-2/build.boot")
  (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("personal-daily-scratch.org"
- (filename . "~/Dropbox/org-life/projects/persona-daily-scratch.org")
- (front-context-string)
  (rear-context-string)
  (position . 1))
 ("blog"
@@ -94,9 +89,9 @@
  (position . 1))
 ("org-refile-last-stored"
  (filename . "~/Dropbox/org-life/learning/org-mode/org-play.org")
- (front-context-string . "** subtree\na\n***")
- (rear-context-string . " woot\n**** test\n")
- (position . 232))
+ (front-context-string . "*** record anyth")
+ (rear-context-string . "* find anything\n")
+ (position . 792))
 ("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")
