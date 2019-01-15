@@ -41,6 +41,8 @@
             (put-clojure-indent 'GET 2)
             (put-clojure-indent 'PATCH 2)
             (put-clojure-indent 'checking 2)
+
+            (put-clojure-indent 'rr 2)
             
             (enable-paredit-mode)
             (subword-mode)))

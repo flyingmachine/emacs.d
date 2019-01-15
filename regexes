@@ -1,0 +1,3 @@
+;; convert clojure deps to deps.edn format
+\[\([^[:space:]]+\)[[:space:]]+\(".+"\)\]
+\1 {:mvn/version \2}

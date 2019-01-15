@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("emacs"
+(("focus stacking.org"
+ (filename . "~/Google Drive/projects/photography/focus stacking.org")
+ (front-context-string . "** DONE 0324-037")
+ (rear-context-string . " DONE 0266-0313\n")
+ (position . 408))
+("master.org"
+ (filename . "~/Dropbox/org-life/master.org")
+ (front-context-string . "* inbox\n* person")
+ (rear-context-string)
+ (position . 1))
+("emacs"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . ";;;;\n;; Packages")
  (rear-context-string)
@@ -28,8 +38,8 @@
  (rear-context-string)
  (position . 1))
 ("grateful-place"
- (filename . "~/projects/web/grateful-place-3/build.boot")
- (front-context-string . "(set-env!\n  :sou")
+ (filename . "~/projects/web/grateful-place-3/src/frontend/grateful_place/core.cljs")
+ (front-context-string . "(ns grateful-pla")
  (rear-context-string)
  (position . 1))
 ("open-source-2"
@@ -88,10 +98,10 @@
  (rear-context-string)
  (position . 1))
 ("org-refile-last-stored"
- (filename . "~/Dropbox/org-life/learning/org-mode/org-play.org")
- (front-context-string . "*** record anyth")
- (rear-context-string . "* find anything\n")
- (position . 792))
+ (filename . "~/projects/web/grateful-place-3/doc/internal/todos.org")
+ (front-context-string . "*** post on user")
+ (rear-context-string . "new people\" tab\n")
+ (position . 4345))
 ("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")
