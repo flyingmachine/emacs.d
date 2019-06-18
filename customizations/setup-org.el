@@ -10,6 +10,7 @@
 
 ;; bullets
 (add-hook 'org-mode-hook 'org-bullets-mode)
+(add-hook 'org-mode-hook 'auto-fill-mode)
 (setq org-bullets-bullet-list '("•"))
 
 (setq org-capture-templates

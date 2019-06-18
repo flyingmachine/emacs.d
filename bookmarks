@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("focus stacking.org"
+(("gp3-conversion"
+ (filename . "~/projects/web/gp3-conversion/src/gp3/core.clj")
+ (front-context-string . "(ns gp3.core\n  (")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth-roadmap"
+ (filename . "~/projects/web/sweet-tooth/docs/roadmap.org")
+ (front-context-string . "* frontend\n** id")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth-dashboard-example"
+ (filename . "~/projects/web/sweet-tooth/dashboard-example/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("describe"
+ (filename . "~/projects/play/describe/src/sweet_tooth/describe.cljc")
+ (front-context-string . "(ns describe.cor")
+ (rear-context-string)
+ (position . 1))
+("focus stacking.org"
  (filename . "~/Google Drive/projects/photography/focus stacking.org")
  (front-context-string . "** DONE 0324-037")
  (rear-context-string . " DONE 0266-0313\n")
@@ -38,7 +58,7 @@
  (rear-context-string)
  (position . 1))
 ("grateful-place"
- (filename . "~/projects/web/grateful-place-3/src/frontend/grateful_place/core.cljs")
+ (filename . "~/projects/web/grateful-place-3/src/grateful_place/frontend/core.cljs")
  (front-context-string . "(ns grateful-pla")
  (rear-context-string)
  (position . 1))
@@ -99,9 +119,9 @@
  (position . 1))
 ("org-refile-last-stored"
  (filename . "~/projects/web/grateful-place-3/doc/internal/todos.org")
- (front-context-string . "*** post on user")
- (rear-context-string . "new people\" tab\n")
- (position . 4345))
+ (front-context-string . "** TODO code of ")
+ (rear-context-string . "eive that info?\n")
+ (position . 20079))
 ("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")

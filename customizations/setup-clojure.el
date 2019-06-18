@@ -6,7 +6,7 @@
 ;; (require 'clj-refactor)
 
 ;; turn off ansi in boot
-(setenv "BOOT_COLOR" "off")
+;; (setenv "BOOT_COLOR" "off")
 
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
@@ -130,9 +130,11 @@
      (define-key cider-mode-map (kbd "C-c r") 'cider-switch-to-repl-buffer)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)
-     (define-key cider-repl-mode-map (kbd "C-c u") 'cider-user-ns)))
+     (define-key cider-repl-mode-map (kbd "C-c u") 'cider-user-ns)
+
+     (define-key cider-mode-map (kbd "C-c C-q") 'cider-quit)
+     (define-key clojure-mode-map (kbd "C-c C-q") 'cider-quit)))
 
 (defun clj-align-vectors (beg end)
   (interactive "r")
   (align-regexp beg end "^ \\[[^ ]+\\(\\s-+\\)" 1 1 t))
-
