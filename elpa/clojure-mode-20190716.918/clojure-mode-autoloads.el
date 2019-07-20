@@ -17,10 +17,10 @@ Major mode for editing Clojure code.
 \(fn)" t nil)
 
 (autoload 'clojure-unwind "clojure-mode" "\
-Unwind thread at point or above point by one level.
-Return nil if there are no more levels to unwind.
+Unwind thread at point or above point by N levels.
+With universal argument \\[universal-argument], fully unwind thread.
 
-\(fn)" t nil)
+\(fn &optional N)" t nil)
 
 (autoload 'clojure-unwind-all "clojure-mode" "\
 Fully unwind thread at point or above point.
@@ -93,14 +93,15 @@ Change a surrounding when to when-not, or vice-versa.
 
 (autoload 'clojure-let-backward-slurp-sexp "clojure-mode" "\
 Slurp the s-expression before the let form into the let form.
-With a numberic prefix argument slurp the previous N s-expression
+With a numeric prefix argument slurp the previous N s-expressions
 into the let form.
 
 \(fn &optional N)" t nil)
 
 (autoload 'clojure-let-forward-slurp-sexp "clojure-mode" "\
 Slurp the next s-expression after the let form into the let form.
-With a numeric prefix argument slurp the next N s-expressions into the let form.
+With a numeric prefix argument slurp the next N s-expressions
+into the let form.
 
 \(fn &optional N)" t nil)
 
@@ -112,6 +113,16 @@ With a numeric prefix argument the let is introduced N lists up.
 
 (autoload 'clojure-move-to-let "clojure-mode" "\
 Move the form at point to a binding in the nearest let.
+
+\(fn)" t nil)
+
+(autoload 'clojure-rename-ns-alias "clojure-mode" "\
+Rename a namespace alias.
+
+\(fn)" t nil)
+
+(autoload 'clojure-add-arity "clojure-mode" "\
+Add an arity to a function.
 
 \(fn)" t nil)
 
