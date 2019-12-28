@@ -189,3 +189,8 @@
   "XXXX....")
 
 (global-display-line-numbers-mode)
+
+(defun toggle-show-trailing-whitespace ()
+  "Toggle `show-trailing-whitespace'."
+  (interactive)
+  (setq show-trailing-whitespace (not show-trailing-whitespace)))

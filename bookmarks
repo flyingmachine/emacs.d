@@ -2,24 +2,104 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("gp3-conversion"
+(("sweet-tooth/todo-example"
+ (filename . "~/projects/web/sweet-tooth/todo-example/project.clj")
+ (front-context-string . "(defproject swee")
+ (rear-context-string)
+ (position . 1))
+("poc-paint-night"
+ (filename . "~/projects/web/pocpaint/source/index.html.erb")
+ (front-context-string . "---\ntitle: Welco")
+ (rear-context-string)
+ (position . 1))
+("metabase/metabase-enterprise"
+ (filename . "~/projects/web/metabase/metabase-enterprise/project.clj")
+ (front-context-string . ";; -*- comment-c")
+ (rear-context-string)
+ (position . 1))
+("metabase/harbormaster"
+ (filename . "~/projects/web/metabase/harbormaster/project.clj")
+ (front-context-string . "(defproject swee")
+ (rear-context-string)
+ (position . 1))
+("metabase/hosting"
+ (filename . "~/projects/web/metabase/hosting/README.md")
+ (front-context-string . "# Hosting\n\nThis ")
+ (rear-context-string)
+ (position . 1))
+("metabase/submarine"
+ (filename . "~/projects/web/metabase/submarine/project.clj")
+ (front-context-string . "(defproject subm")
+ (rear-context-string)
+ (position . 1))
+("metabase/harbormaster-archive"
+ (filename . "~/projects/web/metabase/harbormaster-archive/project.clj")
+ (front-context-string . ";; -*- comment-c")
+ (rear-context-string)
+ (position . 1))
+("metabase/metastore"
+ (filename . "~/projects/web/metabase/metastore/project.clj")
+ (front-context-string . ";; -*- comment-c")
+ (rear-context-string)
+ (position . 1))
+("metabase/metabase-app"
+ (filename . "~/projects/web/metabase/metabase/project.clj")
+ (front-context-string . ";; -*- comment-c")
+ (rear-context-string)
+ (position . 1))
+("metabase/metabase.org"
+ (filename . "~/projects/web/metabase/org/metabase.org")
+ (front-context-string . "* notes\n** postg")
+ (rear-context-string)
+ (position . 1))
+("ui-font-size"
+ (filename . "~/.emacs.d.primary/customizations/ui.el")
+ (front-context-string . "(set-face-attrib")
+ (rear-context-string . "or my poor eyes\n")
+ (position . 1377))
+("gp3-conversion"
  (filename . "~/projects/web/gp3-conversion/src/gp3/core.clj")
  (front-context-string . "(ns gp3.core\n  (")
  (rear-context-string)
  (position . 1))
-("sweet-tooth-roadmap"
+("sweet-tooth/roadmap"
  (filename . "~/projects/web/sweet-tooth/docs/roadmap.org")
  (front-context-string . "* frontend\n** id")
  (rear-context-string)
  (position . 1))
-("sweet-tooth-dashboard-example"
+("sweet-tooth/dashboard-example"
  (filename . "~/projects/web/sweet-tooth/dashboard-example/build.boot")
  (front-context-string . "(set-env!\n  :sou")
  (rear-context-string)
  (position . 1))
+("sweet-tooth/character-sheet-example"
+ (filename . "~/projects/web/sweet-tooth/character-sheet-example/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth/ansible"
+ (filename . "~/projects/web/sweet-tooth/clojure-uberjar-webapp/")
+ (front-context-string . "clojure-uberjar-")
+ (rear-context-string . "40 Jan 17 15:19 ")
+ (position . 267))
+("sweet-tooth/frontend"
+ (filename . "~/projects/web/sweet-tooth/frontend/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth/workflow"
+ (filename . "~/projects/web/sweet-tooth/workflow/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
+("sweet-tooth/endpoint"
+ (filename . "~/projects/web/sweet-tooth/endpoint/build.boot")
+ (front-context-string . "(set-env!\n  :sou")
+ (rear-context-string)
+ (position . 1))
 ("describe"
- (filename . "~/projects/play/describe/src/sweet_tooth/describe.cljc")
- (front-context-string . "(ns describe.cor")
+ (filename . "~/projects/web/sweet-tooth/describe/project.clj")
+ (front-context-string . "(defproject swee")
  (rear-context-string)
  (position . 1))
 ("focus stacking.org"
@@ -72,31 +152,6 @@
  (front-context-string . "#!/usr/bin/env r")
  (rear-context-string)
  (position . 1))
-("sweet-tooth-character-sheet-example"
- (filename . "~/projects/web/sweet-tooth/character-sheet-example/build.boot")
- (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("sweet-tooth-ansible"
- (filename . "~/projects/web/sweet-tooth/clojure-uberjar-webapp/")
- (front-context-string . "clojure-uberjar-")
- (rear-context-string . "40 Jan 17 15:19 ")
- (position . 267))
-("sweet-tooth-frontend"
- (filename . "~/projects/web/sweet-tooth/frontend/build.boot")
- (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("sweet-tooth-workflow"
- (filename . "~/projects/web/sweet-tooth/workflow/build.boot")
- (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
-("sweet-tooth-endpoint"
- (filename . "~/projects/web/sweet-tooth/endpoint/build.boot")
- (front-context-string . "(set-env!\n  :sou")
- (rear-context-string)
- (position . 1))
 ("constant awesome"
  (filename . "~/projects/web/constant-awesome/build.boot")
  (front-context-string)
@@ -118,10 +173,10 @@
  (rear-context-string)
  (position . 1))
 ("org-refile-last-stored"
- (filename . "~/projects/web/sweet-tooth/docs/roadmap.org")
- (front-context-string . "*** implement ro")
- (rear-context-string . "ore with routes\n")
- (position . 2770))
+ (filename . "~/projects/web/metabase/org/metabase.org")
+ (front-context-string . "*** DOING learni")
+ (rear-context-string . "ument this shit\n")
+ (position . 44470))
 ("cljobs"
  (filename . "~/projects/web/cljobs/build.boot")
  (front-context-string . "(set-env!\n :sour")
@@ -140,6 +195,11 @@
 ("projects.org"
  (filename . "~/Dropbox/org-life/projects.org")
  (front-context-string . "* Grateful Place")
+ (rear-context-string)
+ (position . 1))
+("this-is-what-we-have-to-work-with-talk.org"
+ (filename . "~/Google Drive/g docs/projects/this is what we have to work with/this-is-what-we-have-to-work-with-talk.org")
+ (front-context-string . "* prose\n\nHi, I'm")
  (rear-context-string)
  (position . 1))
 )

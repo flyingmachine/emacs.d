@@ -24,6 +24,7 @@
 
 (add-hook 'clojure-mode-hook
           (lambda ()
+            (setq show-trailing-whitespace t)
             (setq inferior-lisp-program "lein repl")
             (put-clojure-indent 'reg-event-db 1)
             (put-clojure-indent 'reg-event-fx 1)
@@ -37,13 +38,17 @@
             (put-clojure-indent 'componentWillUnmount 1)
             (put-clojure-indent 'componentDidUpdate 1)
 
+            (put-clojure-indent 'expect-with-temp 1)
+            (put-clojure-indent 'strict-extend 1)
+
             (put-clojure-indent 'POST 2)
+            (put-clojure-indent 'DELETE 2)
             (put-clojure-indent 'GET 2)
             (put-clojure-indent 'PATCH 2)
             (put-clojure-indent 'checking 2)
 
             (put-clojure-indent 'rr 2)
-            
+
             (enable-paredit-mode)
             (subword-mode)))
 

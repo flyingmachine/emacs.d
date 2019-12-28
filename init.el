@@ -192,13 +192,246 @@
    (quote
     ("4486ade2acbf630e78658cd6235a5c6801090c2694469a2a2b4b0e12227a64b9" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
  '(fci-rule-color "#373b41")
- '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")) t)
+ '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")))
  '(package-selected-packages
    (quote
-    (chruby seeing-is-believing inf-ruby asciidoc cider sesman sass-mode swiper-helm counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv doom-themes markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous helm-projectile helm-ls-git helm-git-grep helm-descbinds helm-ag haskell-mode haml-mode git-gutter exec-path-from-shell enh-ruby-mode dockerfile-mode csharp-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag adoc-mode adjust-parens ack-and-a-half)))
+    (typescript-mode terraform-mode jsx-mode chruby seeing-is-believing inf-ruby asciidoc cider sesman sass-mode swiper-helm counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv doom-themes markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous helm-projectile helm-ls-git helm-git-grep helm-descbinds helm-ag haskell-mode haml-mode git-gutter exec-path-from-shell enh-ruby-mode dockerfile-mode csharp-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag adoc-mode adjust-parens ack-and-a-half)))
  '(safe-local-variable-values
    (quote
-    ((cider-ns-refresh-after-fn . "integrant.repl/resume")
+    ((eval progn
+           (put
+            (quote defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote setting/defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote s/defn)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote p\.types/defprotocol+)
+            (quote clojure-doc-string-elt)
+            2)
+           (define-clojure-indent
+             (assert 1)
+             (ex-info 1)
+             (expect 0)
+             (let-404 1)
+             (match 1)
+             (merge-with 1)
+             (p\.types/defprotocol+
+              (quote
+               (1
+                (:defn))))
+             (p\.types/def-abstract-type
+              (quote
+               (1
+                (:defn))))
+             (p\.types/deftype+
+              (quote
+               (2 nil nil
+                  (:defn))))
+             (p\.types/defrecord+
+              (quote
+               (2 nil nil
+                  (:defn))))))
+     (eval progn
+           (put
+            (quote p\.types/defprotocol+)
+            (quote clojure-doc-string-elt)
+            2)
+           (define-clojure-indent
+             (p\.types/defprotocol+
+              (quote
+               (1
+                (:defn))))
+             (p\.types/definterface+
+              (quote
+               (1
+                (:defn))))
+             (p\.types/def-abstract-type
+              (quote
+               (1
+                (:defn))))
+             (p\.types/deftype+
+              (quote
+               (2 nil nil
+                  (:defn))))
+             (p\.types/defrecord+
+              (quote
+               (2 nil nil
+                  (:defn))))))
+     (eval progn
+           (put
+            (quote defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote setting/defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote s/defn)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote p\.types/defprotocol+)
+            (quote clojure-doc-string-elt)
+            2)
+           (define-clojure-indent
+             (assert 1)
+             (ex-info 1)
+             (expect 0)
+             (let-404 1)
+             (match 1)
+             (merge-with 1)
+             (with-redefs-fn 1)
+             (p\.types/defprotocol+
+              (quote
+               (1
+                (:defn))))
+             (p\.types/def-abstract-type
+              (quote
+               (1
+                (:defn))))
+             (p\.types/deftype+
+              (quote
+               (2 nil nil
+                  (:defn))))
+             (p\.types/defrecord+
+              (quote
+               (2 nil nil
+                  (:defn))))))
+     (eval progn
+           (put
+            (quote defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote setting/defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote s/defn)
+            (quote clojure-doc-string-elt)
+            2)
+           (define-clojure-indent
+             (assert 1)
+             (assoc 1)
+             (ex-info 1)
+             (expect 0)
+             (match 1)
+             (merge-with 1)
+             (with-redefs-fn 1)))
+     (cljr-favor-prefix-notation . t)
+     (eval progn
+           (put
+            (quote defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote api/defendpoint-async)
+            (quote clojure-doc-string-elt)
+            3)
+           (put
+            (quote defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote setting/defsetting)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote s/defn)
+            (quote clojure-doc-string-elt)
+            2)
+           (put
+            (quote p\.types/defprotocol+)
+            (quote clojure-doc-string-elt)
+            2)
+           (define-clojure-indent
+             (assert 1)
+             (ex-info 1)
+             (expect 0)
+             (match 1)
+             (merge-with 1)
+             (with-redefs-fn 1)
+             (p\.types/defprotocol+
+              (quote
+               (1
+                (:defn))))
+             (p\.types/def-abstract-type
+              (quote
+               (1
+                (:defn))))
+             (p\.types/deftype+
+              (quote
+               (2 nil nil
+                  (:defn))))
+             (p\.types/defrecord+
+              (quote
+               (2 nil nil
+                  (:defn))))))
+     (cider-ns-refresh-after-fn . "integrant.repl/resume")
      (cider-ns-refresh-before-fn . "integrant.repl/suspend")
      (cider-refresh-after-fn . "integrant.repl/resume")
      (cider-refresh-before-fn . "integrant.repl/suspend"))))
