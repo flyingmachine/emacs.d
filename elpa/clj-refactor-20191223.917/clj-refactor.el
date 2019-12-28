@@ -6,9 +6,9 @@
 ;; Author: Magnar Sveen <magnars@gmail.com>
 ;;         Lars Andersen <expez@expez.com>
 ;;         Benedek Fazekas <benedek.fazekas@gmail.com>
-;; Version: 2.4.0
+;; Version: 2.5.0-snapshot
 ;; Keywords: convenience, clojure, cider
-;; Package-Requires: ((emacs "25.1") (seq "2.19") (yasnippet "0.6.1") (paredit "24") (multiple-cursors "1.2.2") (clojure-mode "5.6.1") (cider "0.17.0") (edn "1.1.2") (inflections "2.3") (hydra "0.13.2"))
+;; Package-Requires: ((emacs "25.1") (seq "2.19") (yasnippet "0.6.1") (paredit "24") (multiple-cursors "1.2.2") (clojure-mode "5.6.1") (cider "0.23.0") (edn "1.1.2") (inflections "2.3") (hydra "0.13.2"))
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -823,7 +823,7 @@ A new record is created to define this constructor."
 
 (defun cljr--project-dir ()
   (or
-   (thread-last  '("project.clj" "build.boot" "pom.xml" "deps.edn")
+   (thread-last  '("project.clj" "build.boot" "pom.xml" "deps.edn" "shadow-cljs.edn")
      (mapcar 'cljr--locate-project-file)
      (delete 'nil)
      car)
@@ -842,6 +842,8 @@ A new record is created to define this constructor."
         (let ((file (expand-file-name "pom.xml" project-dir)))
           (and (file-exists-p file) file))
         (let ((file (expand-file-name "deps.edn" project-dir)))
+          (and (file-exists-p file) file))
+        (let ((file (expand-file-name "shadow-cljs.edn" project-dir)))
           (and (file-exists-p file) file)))))
 
 (defun cljr--project-files ()
@@ -1079,7 +1081,7 @@ If CLJS? is T we insert in the cljs part of the ns declaration."
 
 Two checks are made - whether the namespace of the file has the
 word test in it and whether the file lives under the test/ directory."
-  (or (string-match-p "test\." (clojure-find-ns))
+  (or (string-match-p "\\btest\\b" (clojure-find-ns))
       (string-match-p "/test" (buffer-file-name))))
 
 (defun cljr--clojure-ish-filename-p (file-name)
@@ -1328,9 +1330,12 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-stop-referring"
     (paredit-forward)
     (let ((case-fold-search nil))
       (while (re-search-forward (regexp-opt symbols 'symbols) nil t)
-        (paredit-backward)
-        (insert ns "/")
-        (paredit-forward)))))
+        (when (save-excursion
+                (paredit-backward-up)
+                (not (looking-at "\"")))
+          (paredit-backward)
+          (insert ns "/")
+          (paredit-forward))))))
 
 (defun cljr--insert-with-proper-whitespace (forms)
   (open-line 2)
@@ -1956,6 +1961,11 @@ the alias in the project."
     (cljr--goto-closest-ns)
     (looking-at-p "(\\s-*in-ns")))
 
+(defun cljr--in-reader-literal-p ()
+  (save-excursion
+    (clojure-backward-logical-sexp 1)
+    (looking-at-p "#")))
+
 ;;;###autoload
 (defun cljr-slash ()
   "Inserts / as normal, but also checks for common namespace shorthands to require.
@@ -1966,7 +1976,8 @@ form."
   (interactive)
   (insert "/")
   (unless (or (cljr--in-map-destructuring?)
-              (cljr--in-ns-above-point-p))
+              (cljr--in-ns-above-point-p)
+              (cljr--in-reader-literal-p))
     (when-let (aliases (and cljr-magic-requires
                             (not (cider-in-comment-p))
                             (not (cider-in-string-p))
@@ -2158,6 +2169,13 @@ If it's present KEY indicates the key to extract from the response."
 (defun cljr--update-artifact-cache ()
   (cljr--call-middleware-async (cljr--create-msg "artifact-list"
                                                  "force" "true")
+                               (lambda (_)
+                                 (when cljr--debug-mode
+                                   (message "Artifact cache updated")))))
+
+(defun cljr--init-artifact-cache ()
+  (cljr--call-middleware-async (cljr--create-msg "artifact-list"
+                                                 "force" "false")
                                (lambda (_)
                                  (when cljr--debug-mode
                                    (message "Artifact cache updated")))))
@@ -2702,7 +2720,8 @@ Also adds the alias prefix to all occurrences of public symbols in the namespace
 (defun cljr--warm-ast-cache ()
   (run-hooks 'cljr-before-warming-ast-cache-hook)
   (cljr--call-middleware-async
-   (cljr--create-msg "warm-ast-cache")
+   (cljr--create-msg "warm-ast-cache"
+                     "ignore-paths" cljr-middleware-ignored-paths)
    (lambda (res)
      (run-hook-with-args 'cljr-after-warming-ast-cache-hook res)
      (cljr--maybe-rethrow-error res)
@@ -2726,10 +2745,12 @@ removed."
   (unless (and *cljr--noninteractive*
                (not (buffer-modified-p)))
     (save-buffer))
-  (let ((path (or path (cljr--project-relative-path (buffer-file-name)))))
+  (let ((path (or path (buffer-file-name)))
+        (relative-path (cljr--project-relative-path path)))
     (when-let (new-ns (cljr--call-middleware-sync
                        (cljr--create-msg "clean-ns"
                                          "path" path
+                                         "relative-path" relative-path
                                          "libspec-whitelist" cljr-libspec-whitelist
                                          "prune-ns-form" (if no-prune? "false"
                                                            "true"))
@@ -3266,7 +3287,7 @@ warning by customizing `cljr-suppress-no-project-warning'.)"))))
   (ignore-errors
     (when (cljr--middleware-version) ; check if middleware is running
       (when cljr-populate-artifact-cache-on-startup
-        (cljr--update-artifact-cache))
+        (cljr--init-artifact-cache))
       (when (and (not cljr-warn-on-eval)
                  cljr-eagerly-build-asts-on-startup)
         (cljr--warm-ast-cache)))))
@@ -3358,12 +3379,22 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-e
                (cljr--insert-example-fn fn-name args path)))
       (cljr--insert-example-fn fn-name args path))))
 
+(defun cljr--inflect-last-word (f s)
+  (when s
+    (save-match-data
+      (let* ((words (split-string s "-"))
+             (last-word (car (last words)))
+             (prefix (butlast words)))
+        (mapconcat 'identity
+                   (append prefix (list (funcall f last-word)))
+                   "-")))))
+
 (defun cljr--create-fn-from-list-fold (args path)
   (cljr--insert-example-fn (car args)
                            (seq-map
                             (lambda (it)
                               (when-let (name (cljr--guess-param-name it))
-                                (inflection-singularize-string name)))
+                                (cljr--inflect-last-word 'inflection-singularize-string name)))
                             (cdr args))
                            path))
 
@@ -3373,7 +3404,7 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-e
                                  (seq-map
                                   (lambda (it)
                                     (when-let (name (cljr--guess-param-name it))
-                                      (inflection-singularize-string name)))
+                                      (cljr--inflect-last-word 'inflection-singularize-string name)))
                                   (cdr args)))
                            path))
 
@@ -3398,7 +3429,7 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-e
 (defun cljr--create-fn-from-sort (args path)
   (let* ((fn-name (cider-symbol-at-point))
          (param-name (when-let (coll-name (cljr--guess-param-name (car (last args))))
-                       (inflection-singularize-string coll-name))))
+                       (cljr--inflect-last-word 'inflection-singularize-string coll-name))))
     (cljr--insert-example-fn fn-name
                              (if param-name
                                  (list (concat param-name "-a")
@@ -3414,7 +3445,7 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-e
                          (when (cljr--keywordp (car args))
                            (string-remove-prefix ":" (car args)))
                        (when-let (coll-name (cljr--guess-param-name (car (last args))))
-                         (inflection-singularize-string coll-name)))))
+                         (cljr--inflect-last-word 'inflection-singularize-string coll-name)))))
     (cljr--insert-example-fn fn-name
                              (if making-comparator?
                                  (if param-name
@@ -3431,7 +3462,7 @@ See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-e
                   (cljr--guess-param-name (nth 1 args)))
              "acc")
          (when-let (name (cljr--guess-param-name (car (last args))))
-           (inflection-singularize-string name)))
+           (cljr--inflect-last-word 'inflection-singularize-string name)))
    path))
 
 (defun cljr--unwind-and-extract-this-as-list (name)
@@ -3523,7 +3554,7 @@ and make the whole string lower-cased."
       (inflection-pluralize-string
        (cljr--guess-param-name (cljr--last-arg-s prepped-form))))
      ((member fn-call cljr--fns-that-get-item-out-of-coll)
-      (inflection-singularize-string
+      (cljr--inflect-last-word 'inflection-singularize-string
        (cljr--guess-param-name (cljr--first-arg-s prepped-form)))))))
 
 (defvar cljr--semantic-noops--first-position
