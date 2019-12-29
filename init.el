@@ -167,6 +167,8 @@
 ;; helm
 (load "setup-helm.el")
 
+(load "setup-company.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
@@ -195,7 +197,7 @@
  '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")))
  '(package-selected-packages
    (quote
-    (typescript-mode terraform-mode jsx-mode chruby seeing-is-believing inf-ruby asciidoc cider sesman sass-mode swiper-helm counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv doom-themes markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous helm-projectile helm-ls-git helm-git-grep helm-descbinds helm-ag haskell-mode haml-mode git-gutter exec-path-from-shell enh-ruby-mode dockerfile-mode csharp-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag adoc-mode adjust-parens ack-and-a-half)))
+    (flycheck-clj-kondo flycheck typescript-mode terraform-mode jsx-mode chruby seeing-is-believing inf-ruby asciidoc cider sesman sass-mode swiper-helm counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv doom-themes markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous helm-projectile helm-ls-git helm-git-grep helm-descbinds helm-ag haskell-mode haml-mode git-gutter exec-path-from-shell enh-ruby-mode dockerfile-mode csharp-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag adoc-mode adjust-parens ack-and-a-half)))
  '(safe-local-variable-values
    (quote
     ((eval progn
