@@ -1,5 +1,6 @@
 ;; from https://github.com/purcell/emacs.d/blob/master/lisp/init-company.el
 
+(require 'company)
 (setq tab-always-indent 'complete)
 (add-to-list 'completion-styles 'initials t)
 

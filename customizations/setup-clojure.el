@@ -10,6 +10,7 @@
 
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
+(add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
 ;; This is useful for working with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
@@ -143,3 +144,5 @@
 (defun clj-align-vectors (beg end)
   (interactive "r")
   (align-regexp beg end "^ \\[[^ ]+\\(\\s-+\\)" 1 1 t))
+
+(require 'flycheck-clj-kondo)
