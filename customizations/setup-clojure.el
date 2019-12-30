@@ -8,14 +8,6 @@
 ;; turn off ansi in boot
 ;; (setenv "BOOT_COLOR" "off")
 
-;; Enable paredit for Clojure
-(add-hook 'clojure-mode-hook 'enable-paredit-mode)
-(add-hook 'clojure-mode-hook 'enable-paredit-mode)
-
-;; This is useful for working with camel-case tokens, like names of
-;; Java classes (e.g. JavaClassName)
-;; (add-hook 'clojure-mode-hook 'subword-mode)
-
 ;; A little more syntax highlighting
 (require 'clojure-mode-extra-font-locking)
 
@@ -26,7 +18,7 @@
 (add-hook 'clojure-mode-hook
           (lambda ()
             (setq show-trailing-whitespace t)
-            (setq inferior-lisp-program "lein repl")
+            ;; (setq inferior-lisp-program "lein repl")
             (put-clojure-indent 'reg-event-db 1)
             (put-clojure-indent 'reg-event-fx 1)
             (put-clojure-indent 'reg-fx 1)
@@ -51,7 +43,8 @@
             (put-clojure-indent 'rr 2)
 
             (enable-paredit-mode)
-            (subword-mode)))
+            (subword-mode)
+            (flycheck-mode)))
 
 (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 (add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
