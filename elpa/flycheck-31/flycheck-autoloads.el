@@ -227,7 +227,7 @@ Use this together with the `option', `option-list' and
 
 (function-put 'flycheck-def-option-var 'doc-string-elt '4)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("flycheck-" "list-flycheck-errors" "help-flycheck-checker-d")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("flycheck-" "list-flycheck-errors" "locate-rebar3-project-root" "contains-rebar-config" "help-flycheck-checker-d" "read-flycheck-")))
 
 ;;;***
 
@@ -242,7 +242,7 @@ Use this together with the `option', `option-list' and
 ;;;### (autoloads nil "flycheck-ert" "flycheck-ert.el" (0 0 0 0))
 ;;; Generated autoloads from flycheck-ert.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-er")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-ert-")))
 
 ;;;***
 

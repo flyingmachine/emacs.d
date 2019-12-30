@@ -1,6 +1,6 @@
 ;;; flycheck-ert.el --- Flycheck: ERT extensions  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2017-2018 Flycheck contributors
+;; Copyright (C) 2017 Flycheck contributors
 ;; Copyright (C) 2013-2016 Sebastian Wiesner and Flycheck contributors
 
 ;; Author: Sebastian Wiesner <swiesner@lunaryorn.com>
@@ -57,12 +57,11 @@ Defaults to `error'."
       (let ((conditions
              (if (consp parent)
                  (apply #'append
-                        (mapcar
-                         (lambda (parent)
-                           (cons parent
-                                 (or (get parent 'error-conditions)
-                                     (error "Unknown signal `%s'" parent))))
-                         parent))
+                        (mapcar (lambda (parent)
+                                  (cons parent
+                                        (or (get parent 'error-conditions)
+                                            (error "Unknown signal `%s'" parent))))
+                                parent))
                (cons parent (get parent 'error-conditions)))))
         (put name 'error-conditions
              (delete-dups (copy-sequence (cons name conditions))))
@@ -153,7 +152,7 @@ After BODY, restore the old state of Global Flycheck Mode."
 (defmacro flycheck-ert-with-env (env &rest body)
   "Add ENV to `process-environment' in BODY.
 
-Execute BODY with a `process-environment' which contains all
+Execute BODY with a `process-environment' with contains all
 variables from ENV added.
 
 ENV is an alist, where each cons cell `(VAR . VALUE)' is a
@@ -171,7 +170,7 @@ with VALUE."
   "Determine the absolute file name of a RESOURCE-FILE.
 
 Relative file names are expanded against
-`flycheck-ert--resource-directory'."
+`flycheck-ert-resources-directory'."
   (expand-file-name resource-file flycheck-ert--resource-directory))
 
 (defmacro flycheck-ert-with-resource-buffer (resource-file &rest body)
@@ -197,8 +196,7 @@ should use to lookup resource files."
   (let ((tests (ert-select-tests t t)))
     ;; Select all tests
     (unless tests
-      (error "No tests defined.  \
-Call `flycheck-ert-initialize' after defining all tests!"))
+      (error "No tests defined.  Call `flycheck-ert-initialize' after defining all tests!"))
 
     (setq flycheck-ert--resource-directory resource-dir)
 
@@ -256,14 +254,16 @@ case, including assertions and setup code."
          (keys (car keys-and-body))
          (default-tags '(syntax-checker external-tool)))
     `(ert-deftest ,full-name ()
-       :expected-result ,(or (plist-get keys :expected-result) :passed)
+       :expected-result
+       (list 'or
+             '(satisfies flycheck-ert-syntax-check-timed-out-p)
+             ,(or (plist-get keys :expected-result) :passed))
        :tags (append ',(append default-tags language-tags checker-tags)
                      ,(plist-get keys :tags))
-       ,@(mapcar (lambda (c)
-                   `(skip-unless
-                     ;; Ignore non-command checkers
-                     (or (not (flycheck-checker-get ',c 'command))
-                         (executable-find (flycheck-checker-executable ',c)))))
+       ,@(mapcar (lambda (c) `(skip-unless
+                               ;; Ignore non-command checkers
+                               (or (not (flycheck-checker-get ',c 'command))
+                                   (executable-find (flycheck-checker-executable ',c)))))
                  checkers)
        ,@body)))
 
@@ -332,27 +332,14 @@ Raise an assertion error if the buffer is not clear afterwards."
 
 ;;; Test assertions
 
-(defun flycheck-error-without-group (err)
-  "Return a copy ERR with the `group' property set to nil."
-  (let ((copy (copy-flycheck-error err)))
-    (setf (flycheck-error-group copy) nil)
-    copy))
-
 (defun flycheck-ert-should-overlay (error)
   "Test that ERROR has a proper overlay in the current buffer.
 
 ERROR is a Flycheck error object."
-  (let* ((overlay (-first (lambda (ov)
-                            (equal (flycheck-error-without-group
-                                    (overlay-get ov 'flycheck-error))
-                                   (flycheck-error-without-group error)))
+  (let* ((overlay (-first (lambda (ov) (equal (overlay-get ov 'flycheck-error)
+                                              error))
                           (flycheck-overlays-in 0 (+ 1 (buffer-size)))))
-         (region
-          ;; Overlays of errors from other files are on the first line
-          (if (flycheck-relevant-error-other-file-p error)
-              (cons (point-min)
-                    (save-excursion (goto-char (point-min)) (point-at-eol)))
-            (flycheck-error-region-for-mode error 'symbols)))
+         (region (flycheck-error-region-for-mode error 'symbols))
          (level (flycheck-error-level error))
          (category (flycheck-error-level-overlay-category level))
          (face (get category 'face))
@@ -368,9 +355,7 @@ ERROR is a Flycheck error object."
                                       (overlay-get overlay 'before-string))
                    fringe-icon))
     (should (eq (overlay-get overlay 'category) category))
-    (should (equal (flycheck-error-without-group (overlay-get overlay
-                                                              'flycheck-error))
-                   (flycheck-error-without-group error)))))
+    (should (equal (overlay-get overlay 'flycheck-error) error))))
 
 (defun flycheck-ert-should-errors (&rest errors)
   "Test that the current buffers has ERRORS.
@@ -388,16 +373,7 @@ buffer is equal to the number of given ERRORS.  In other words,
 check that the buffer has all ERRORS, and no other errors."
   (let ((expected (mapcar (apply-partially #'apply #'flycheck-error-new-at)
                           errors)))
-    (should (equal (mapcar #'flycheck-error-without-group expected)
-                   (mapcar #'flycheck-error-without-group
-                           flycheck-current-errors)))
-    ;; Check that related errors are the same
-    (cl-mapcar (lambda (err1 err2)
-                 (should (equal (mapcar #'flycheck-error-without-group
-                                        (flycheck-related-errors err1 expected))
-                                (mapcar #'flycheck-error-without-group
-                                        (flycheck-related-errors err2)))))
-               expected flycheck-current-errors)
+    (should (equal expected flycheck-current-errors))
     (mapc #'flycheck-ert-should-overlay expected))
   (should (= (length errors)
              (length (flycheck-overlays-in (point-min) (point-max))))))
@@ -435,7 +411,7 @@ resource directory."
       ;; Load safe file-local variables because some tests depend on them
       (let ((enable-local-variables :safe)
             ;; Disable all hooks at this place, to prevent 3rd party packages
-            ;; from interfering
+            ;; from interferring
             (hack-local-variables-hook))
         (hack-local-variables))
       ;; Configure config file locating for unit tests
